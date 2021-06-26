@@ -115,13 +115,13 @@ pre {
 }
 
 /* Header */
-.home {
+.inicio {
   padding: 0 1rem;
   float: left;
   margin: 1rem 0; /* 16px /16 */
   font-size: 1em; /* 16px /16 */
 }
-.home :link:not(:hover) {
+.inicio :link:not(:hover) {
   text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ pre {
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
-.tmpl-home .postlist-link {
+.tmpl-inicio .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
 }
