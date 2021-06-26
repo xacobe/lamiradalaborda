@@ -124,12 +124,12 @@ eleventyNavigation:
       </div><div class="w3-half">
       {% endif %}
         <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%" > </a>
-        
+
     {% endfor %}
-    
+
     </div>
 #}
-    
+
 <style>
 .row {
   display: flex;
@@ -157,21 +157,21 @@ eleventyNavigation:
   {% endraw %}
 
 </style>
-<div class="row"> 
+<div class="row">
   <div class="column">
    {% for post in collections.photo | head(-8) %}
    {% if loop.index==4 %}
       </div><div class="column">
       {% endif %}
-  
+
     <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a>
-  
+
   {% endfor %}
   </div>
   </div>
 
 
-     
+
     <!-- End photo grid -->
     </div>
   <!-- End Portfolio Section -->
