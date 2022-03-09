@@ -1,7 +1,7 @@
 {
-    "Inicio" : "fa-inicio",
-    "Sobre mi" : "fa-user",
-    "Videos" : "fa-eye",
-    "Contacto" : "fa-envelope",
+    "Home" : "fa-home",
+    "About" : "fa-user",
+    "Photos" : "fa-eye",
+    "Contact" : "fa-envelope",
     "Archive" : "fa-archive"
 }
