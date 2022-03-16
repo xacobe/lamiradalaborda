@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: About Me
+title: Sobre mi Me
 permalink: false
 templateClass: tmpl-post
 eleventyNavigation:
-  key: About
+  key: Sobre mi
   order: 2
   url: /#about
 ---
