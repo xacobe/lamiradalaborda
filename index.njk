@@ -1,5 +1,5 @@
 ---
-layout: layouts/inicio.njk
+layout: layouts/home.njk
 fa-icon: 'fa-inicio'
 eleventyNavigation:
   key: Inicio
@@ -15,11 +15,7 @@ eleventyNavigation:
 
 <!-- Sobre mi Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-<<<<<<< HEAD
     <h2 class="w3-text-light-grey">La mirada Laborda</h2>
-=======
-    <h2 class="w3-text-light-grey">Eduardo Laborda</h2>
->>>>>>> parent of 5cbfd92 (Revert "Some translations")
     <hr style="width:200px" class="w3-opacity">
     <p>“La Mirada Laborda” es un reflejo de mi trabajo, una pequeña selección de mis
         obras más representativas. Después de dos décadas dedicado a la fotografía y al
@@ -42,10 +38,7 @@ eleventyNavigation:
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:85%"></div>
     </div>
-    <p class="w3-wide">Videoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
+    <br>
 
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
       <div class="w3-quarter w3-section">
@@ -66,58 +59,23 @@ eleventyNavigation:
       </div>
     </div>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.open('{{ 'files/resume.pdf' | url}}')">
+    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i> Descargar resumen
     </button>
 
-    <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Honorarios</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basico</li>
-          <li class="w3-padding-16">Video</li>
-          <li class="w3-padding-16">Fotografía</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
-    <!-- End Grid/Pricing tables -->
     </div>
 
     <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+    <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
     <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
+    <p><span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
+    <p>Las aportaciones de Eduardo Laborda fueron decisivas para en el resultado final del proyecto</p><br>
 
-    <img src="{{ '/img/w3images/avatar_g2.jpg' | url }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    {# <img src="{{ '/img/w3images/avatar_g2.jpg' | url }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p>
+    <p>No one is better than Jane Doe.</p> #}
+
   <!-- End Sobre mi Section -->
   </div>
 
@@ -125,22 +83,11 @@ eleventyNavigation:
 <!-- Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">Mis videos</h2>
+    {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
-
-  {#  <div class="w3-half">
-    {% for post in collections.photo | head(-8) %}
-      {% if loop.index==4 %}
-      </div><div class="w3-half">
-      {% endif %}
-        <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%" > </a>
-
-    {% endfor %}
-
-    </div>
-#}
 
 <style>
 .row {
@@ -171,12 +118,13 @@ eleventyNavigation:
 </style>
 <div class="row">
   <div class="column">
-   {% for post in collections.photo | head(-8) %}
-   {% if loop.index==4 %}
+   {% for post in collections.videos | head(-10) %}
+   {% if loop.index==6 %}
       </div><div class="column">
       {% endif %}
 
-    <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a>
+    {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
+    <p>{{ post.data.videourl }}</p>
 
   {% endfor %}
   </div>
@@ -188,7 +136,7 @@ eleventyNavigation:
     </div>
   <!-- End Portfolio Section -->
   </div>
- <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+ {# <div class="w3-content w3-justify w3-text-grey w3-padding-64">
 <h1>Latest 3 Posts</h1>
 
 {% set postslist = collections.posts | head(-3) %}
@@ -196,20 +144,20 @@ eleventyNavigation:
 {% include "postslist.njk" %}
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-</div>
+</div> #}
 <!-- Contacto Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
     <h2 class="w3-text-light-grey">Contacto</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
+      {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: epistolariodigital@yahoo.es</p>
     </div><br>
-    <p>Lets get in touch. Send me a message:</p>
+    <p>Ponte en contacto conmigo</p>
 
-    <form action="/action_page.php" target="_blank">
+    {# <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
@@ -219,7 +167,7 @@ eleventyNavigation:
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
-    </form>
+    </form> #}
   <!-- End Contacto Section -->
   </div>
 
