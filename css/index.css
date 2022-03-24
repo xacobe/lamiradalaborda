@@ -18,3 +18,30 @@
     width: 100%;
     height: 100%;
 }
+
+.w3-jumbo {
+    text-transform: uppercase;
+    z-index: 7;
+}
+
+span.w3-hide-small {
+ z-index: 3;
+}
+
+.w3-image {
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ width: 100%;
+ z-index: -1;
+}
+
+#inicio.w3-black {
+    background-color: none !important;
+}
+
+.w3-padding-large {
+ padding: 0;
+}
