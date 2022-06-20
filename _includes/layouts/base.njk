@@ -9,66 +9,77 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
 
   </head>
   <style>
-  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-row-padding img {margin-bottom: 12px}
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {width: 120px;background: #000;}
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 120px}
-  /* Remove margins from "page content" on small screens TODO add back in*/
-  {% raw %}
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Montserrat", sans-serif;
+    }
+    .w3-row-padding img {
+      margin-bottom: 12px;
+    }
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {
+      width: 120px;
+      background: #000;
+    }
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {
+      margin-left: 120px;
+    }
+    /* Remove margins from "page content" on small screens TODO add back in*/
+    {% raw %}
 
-  @media only screen and (max-width:600px) {#main { margin-left:0}}
 
-  {% endraw %}
-
-
+    {% endraw %}
   </style>
-  <body class="w3-black">
+  <body class="bg-black">
 
-
-
-
-
+    <div class="wrapper d-flex flex-column flex-md-row">
       <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-
-
-  {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-  {%- for entry in collections.all | eleventyNavigation %}
-
-    <a href="{{ entry.url | url }}" class="w3-bar-item w3-button w3-padding-large {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
-      <i class="fa {{ navFA[entry.title]}} w3-xxlarge"></i>
-      <p>{{ entry.title }}</p>
-    </a>
-
-  {%- endfor %}
-</nav>
-
-      <!-- Navbar on small screens (Hidden on medium and large screens) -->
-      <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <nav class="main-nav text-white flex-column flex-shrink-0 bg-black d-none d-md-flex">
+        <!-- Avatar image in top left corner -->
+        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
         {%- for entry in collections.all | eleventyNavigation %}
-        <a href="{{ entry.url | url }}" class="w3-bar-item w3-button" style="width:20% !important">{{ entry.title}}</a>
+          <a href="{{ entry.url | url }}" class="w3-bar-item w3-button  {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
+            <i class="fa {{ navFA[entry.title]}} w3-xxlarge"></i>
+            <p>{{ entry.title }}</p>
+          </a>
         {%- endfor %}
+      </nav>
+      <!-- Navbar on small screens (Hidden on medium and large screens) -->
+      <div class="w3-top d-block d-md-none w3-top d-block d-md-none bg-black text-white p-2" id="myNavbar">
+        <div class="d-flex justify-content-center text-uppercase">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <a href="{{ entry.url | url }}" class="w3-bar-item w3-button">{{ entry.title}}</a>
+          {%- endfor %}
         </div>
       </div>
-    <div class="w3-padding-large" id="main">
+      <div class="container">
+        <header class="p-2 full-width bg-white text-uppercase mt-5 mt-md-0" id="inicio">
+          <h1 class="col-12 text-center pt-3">
+            <span class="w3-hide-small"></span>
+            {{ metadata.title }}</h1>
+          <p class="text-center">Video y fotografía</p>
+        </header>
+          <main>
+            <div class="">
+              {{ content | safe }}
+            </div>
+          </main>
+    </div>
+        <!-- Footer -->
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge"></footer>
+    </div>
+      <script src="/css/bootstrap/js/bootstrap.min.js"></script>
 
-
-    <main {% if templateClass %} class="{{ templateClass }}"{% endif %}>
-      {{ content | safe }}
-    </main>
-
-      <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-
-  </footer>
-
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
-</html>
+      <!-- Current page: {{ page.url | url }} -->
+    </body>
+  </html>

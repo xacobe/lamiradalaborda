@@ -6,153 +6,96 @@ eleventyNavigation:
   order: 1
   url: /#
 ---
-<header class="w3-container w3-padding-32 w3-center" id="inicio">
- <h1 class="w3-jumbo"><span class="w3-hide-small"></span> {{ metadata.title }}.</h1>
-  <p>Video y fotografía</p>
-  <img src="{{ 'img/portada.jpg' | url }}" alt="boy" class="w3-image" width="992" height="1108">
-</header>
-
 
 <!-- Sobre mi Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+<div class="w3-content w3-justify w3-text-grey" id="about">
+  <div class="semioscuro p-5 mb-5 mt-5">
+    <img src="/img/portada.jpg" class="banner-image">
     <h2 class="w3-text-light-grey">La mirada Laborda</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>“La Mirada Laborda” es un reflejo de mi trabajo, una pequeña selección de mis
-        obras más representativas. Después de dos décadas dedicado a la fotografía y al
-        vídeo, sigo fascinado con el cultivo de un lenguaje propio con el que poder
-        transmitir mi pasión por la vida y la belleza de su misterio. Ha sido para mi un
-        honor y un placer entregarme a este oficio y a su magia. He disfrutando
-        esculpiendo mi visión y sobretodo he disfrutado de la gente con la que he tratado.
-        Fotografiar es un acto que implica responsabilidad y amor por lo fotografiado.
-        Cada sesión de fotos, cada audiovisual realizado ha sido una experiencia integral,
-        una poderosa herramienta para conocer al ser humano en un contexto de
-        experimentación artística. Un auténtico regalo.
-        <br>
-        Eduardo Laborda Martínez.
-    </p>
-
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
+            obras más representativas. Después de dos décadas dedicado a la fotografía y al
+            vídeo, sigo fascinado con el cultivo de un lenguaje propio con el que poder
+            transmitir mi pasión por la vida y la belleza de su misterio. Ha sido para mi un
+            honor y un placer entregarme a este oficio y a su magia. He disfrutando
+            esculpiendo mi visión y sobretodo he disfrutado de la gente con la que he tratado.
+            Fotografiar es un acto que implica responsabilidad y amor por lo fotografiado.
+            Cada sesión de fotos, cada audiovisual realizado ha sido una experiencia integral,
+            una poderosa herramienta para conocer al ser humano en un contexto de
+            experimentación artística. Un auténtico regalo.
+            <br>
+            Eduardo Laborda Martínez.
+        </p>
+    <div class="row semioscuro text-center">
+      <div class="col p-3">
         <span class="w3-xlarge">11+</span><br>
-        Colaboraciones
-      </div>
-      <div class="w3-quarter w3-section">
+            Colaboraciones
+          </div>
+      <div class="col p-3">
         <span class="w3-xlarge">55+</span><br>
-        Proyectos hechos
-      </div>
-      <div class="w3-quarter w3-section">
+            Proyectos hechos
+          </div>
+      <div class="col p-3">
         <span class="w3-xlarge">89+</span><br>
-        Clientes felices
-      </div>
-      <div class="w3-quarter w3-section">
+            Clientes felices
+          </div>
+      <div class="col p-3">
         <span class="w3-xlarge">12+</span><br>
-        Exposiciones
-      </div>
+            Exposiciones
+          </div>
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
+    <button class="w3-button w3-light-grey  w3-section" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i> Descargar resumen
-    </button>
+        </button>
+  </div>
 
-    <!-- Contacto Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contacto</h2>
-    <hr style="width:200px" class="w3-opacity">
+</div>
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
-      {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: epistolariodigital@yahoo.es</p>
-    </div><br>
-    <p>Ponte en contacto conmigo</p>
+  <!-- Testimonials -->
+<div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mb-5">
+  <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
+  <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+  <p>
+    <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
+  <p>Las aportaciones de Eduardo Laborda fueron decisivas para en el resultado final del proyecto</p><br>
 
-    {# <form action="/action_page.php" target="_blank">
+  {# <img src="{{ '/img/w3images/avatar_g2.jpg' | url }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+      <p>No one is better than Jane Doe.</p> #}
+
+  <!-- End Sobre mi Section -->
+</div>
+</div>
+
+<!-- Contacto Section -->
+<div class="semioscuro p-5 mb-5 text-white w3-content w3-text-grey" id="contact">
+<h2 class="w3-text-light-grey">Contacto</h2>
+<hr style="width:200px" class="w3-opacity">
+
+<div class="w3-section">
+  <p>
+    <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
+  {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
+  <p>
+    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a></p>
+</div><br>
+
+{# <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey " type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form> #}
-  <!-- End Contacto Section -->
-
-
-    </div>
-
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
-    <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
-    <p>Las aportaciones de Eduardo Laborda fueron decisivas para en el resultado final del proyecto</p><br>
-
-    {# <img src="{{ '/img/w3images/avatar_g2.jpg' | url }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p> #}
-
-  <!-- End Sobre mi Section -->
-  </div>
-
+<!-- End Contacto Section -->
 
 <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Mis videos</h2>
-    {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
-    <hr style="width:200px" class="w3-opacity">
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-
-<style>
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create two equal columns that sit next to each other */
-.column {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-  {% raw %}
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-  {% endraw %}
-
-</style>
-<div class="row">
-  <div class="column">
-   {% for post in collections.videos | head(-10) %}
-   {% if loop.index==6 %}
-      </div><div class="column">
-      {% endif %}
-
-    {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
-    <p>{{ post.data.videourl }}</p>
-
-  {% endfor %}
-  </div>
-  </div>
-
-
-
-    <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
-  </div>
- {# <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+{# <div class="w3-content w3-justify w3-text-grey w3-padding-64">
 <h1>Latest 3 Posts</h1>
 
 {% set postslist = collections.posts | head(-3) %}
@@ -161,6 +104,57 @@ eleventyNavigation:
 
 <p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 </div> #}
+</div>
+<div class="w3-padding-64 w3-content" id="photos">
+  <h2 class="w3-text-light-grey">Mis videos</h2>
+  {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
+  <hr style="width:200px" class="w3-opacity">
+
+  <!-- Grid for photos -->
+  <div class="container">
+
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create two equal columns that sit next to each other */
+      .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      {% raw %}
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        {% endraw %}
+    </style>
+    <div class="row">
+
+        {% for post in collections.videos | head(-10) %}
+
+
+          <div class="col-lg-6 mb-4">
+
+
+          {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
+          <p>{{ post.data.videourl }}</p>
+
+      </div>
+        {% endfor %}
+    </div>
+
+    <!-- End photo grid -->
   </div>
-
-
+  <!-- End Portfolio Section -->
+</div>
