@@ -1,6 +1,10 @@
 .main-nav {
     z-index: 2;
 }
+#photos {
+    z-index: -1;
+    position: relative;
+}
 /* Video container */
 .video-container {
   overflow: hidden;
@@ -59,8 +63,8 @@ span.w3-hide-small {
 .banner-image {
   content: "";
   display: block;
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 100px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -70,6 +74,21 @@ span.w3-hide-small {
   background-size: auto, auto;
   z-index: -1;
   background-size: contain;
+}
+main {
+    padding-top: 100px;
+    z-index: 10;
+}
+.wrapper-banner-image {
+    content: "";
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 7%, rgba(0,0,0,0) 100%);
+  z-index: -1;
 }
 .full-width {
   width: 100vw;
