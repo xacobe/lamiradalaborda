@@ -1,10 +1,10 @@
-header {z-index: 4;}
+header {z-index: 15;}
 .main-nav {
-    z-index: 2;
+    z-index: 20;
 }
 #photos {
     z-index: -1;
-    position: relative;
+    position: relative;/img/portada.jpg
 }
 /* Video container */
 .video-container {
@@ -77,8 +77,9 @@ span.w3-hide-small {
   background-size: contain;
 }
 main {
+  z-index: 0;
     padding-top: 100px;
-    z-index: 10;
+    position: relative;
 }
 .wrapper-banner-image {
     content: "";
