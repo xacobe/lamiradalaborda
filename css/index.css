@@ -1,11 +1,42 @@
-header {z-index: 15;}
+.header {
+  z-index: 15;
+  padding: .5rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 50%;
+}
+
+/* Titulo de la web svg */
+svg.titulo{
+  font   : bold 70px Century Gothic, Arial;
+  width  : 100%;
+  height : 120px;
+}
+
+text.titulo{
+  fill            : none;
+  stroke          : black;
+  stroke-width    : .5px;
+  stroke-linejoin : round;
+  animation       : 2s pulsate infinite;
+}
+
+@keyframes pulsate {
+  50%{ stroke-width:5px }
+}
+
+/* titulo en css */
+.page-title {
+  color: whitesmoke;
+  text-shadow: #313131 3px 3px 1px;
+}
+/* Navegacion */
 .main-nav {
     z-index: 20;
+    position: fixed;
+    padding-bottom: 4rem;
 }
-#photos {
-    z-index: -1;
-    position: relative;/img/portada.jpg
-}
+
 /* Video container */
 .video-container {
   overflow: hidden;
@@ -64,22 +95,19 @@ span.w3-hide-small {
 .banner-image {
   content: "";
   display: block;
-  position: fixed;
-  top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
   width: 100%;
-  background: rgb(0, 0, 0);
-  background: url("../img/portada.jpg") no-repeat;
-  background-size: auto, auto;
   z-index: -1;
-  background-size: contain;
+  height: 100vh;
+  object-fit: cover;
+  object-position: right;
+  position: relative;
 }
 main {
   z-index: 0;
-    padding-top: 100px;
     position: relative;
+}
+.main-wrapper {
+  padding-top: 53px;
 }
 .wrapper-banner-image {
     content: "";
@@ -96,6 +124,42 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,
   width: 100vw;
   position: relative;
   margin-left: -50vw;
-  height: 100px;
   left: 50%;
 }
+
+/* Utility class (Boostrap) */
+.fs-1 {
+  font-size: calc(1.375rem + 6.5vw) !important;
+}
+.fs-2 {
+  font-size: calc(1.325rem + .9vw) !important;
+}
+.fs-3 {
+  font-size: calc(1.3rem + .6vw) !important;
+}
+
+/* Overwrite w3 frameword */
+.w3-button:hover,
+.w3-button.active {
+  color: #fff !important;
+  background-color: transparent !important;
+  border-bottom: solid 5px #18a621;
+}
+.w3-top, .w3-bottom {
+  z-index: 20;
+}
+
+/*  */
+
+.w3-button-primary {
+  background-color: transparent !important;
+  color: #fff !important;
+  border-bottom: solid 5px #fff;
+}
+.w3-button-primary:hover {
+  color: #18a621 !important;
+}
+
+
+/*  */
+
