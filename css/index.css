@@ -169,4 +169,13 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,
 
 
 /*  */
-
+.carousel-control-next, .carousel-control-prev {
+  opacity: .7;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  border-radius: 50%;
+  padding: 2rem;
+  background-size: 37%;
+}

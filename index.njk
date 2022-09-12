@@ -52,11 +52,21 @@ eleventyNavigation:
   <!-- Testimonials -->
   <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mt-2">
     <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
-    <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px;height:80px;">
     <p>
       <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
-    <p>Las aportaciones de Eduardo Laborda fueron decisivas para en el resultado final del proyecto</p><br>
+    <p>"Fue un placer trabajar  con alguien tan comprometido con su oficio.</p>
+    <p> Su calidez humana y talento hacen que todo resulte con él fácil e inspirador"</p>
+    <br>
 
+
+    <img src="{{ '/img/w3images/chef.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px;height:80px;">
+    <p>
+      <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
+    <p>"Las fotos quedaron estupendas, un resultado impactante, sorprendente. </p>
+    <p>Realmente ve el mundo desde una óptica distista.
+       Cuanta belleza y ternura en su mirada."</p>
+    <br>
   </div>
   <!-- End Sobre mi Section -->
 </div>
@@ -68,7 +78,7 @@ eleventyNavigation:
   <hr style="width:200px" class="w3-opacity">
 
   <!-- Grid for photos -->
-  <div class="container">
+  <div class="container text-center">
     <style>
       .row {
         display: flex;
@@ -96,24 +106,44 @@ eleventyNavigation:
         {% endraw %}
     </style>
     <div class="row">
-
-      {% for post in collections.videos | head(-10) %}
-
-        <div class="col-lg-6 mb-4">
-
-          {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
-          <p>{{ post.data.videourl }}</p>
-
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="col-lg-12 mb-4">
+              <div id="XLAfyl6H0P0" class="eleventy-plugin-youtube-embed" style="position:relative;width:100%;padding-top: 56.25%;">
+                <iframe style="position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;" title="Embedded YouTube video" src="https://www.youtube-nocookie.com/embed/XLAfyl6H0P0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+              </div>
+            </div>
+          </div>
+          {% for post in collections.videos | head(-10) %}
+            <div class="carousel-item">
+              <div class="col-lg-12 mb-4">
+                {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
+                <div class="d-block w-100">
+                  <p>{{ post.data.videourl }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
         </div>
-      {% endfor %}
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- End photo grid -->
     </div>
     <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('/videos', '_self')">
-      <i class="fa fa-download"></i>
-      Ver todos los videos
+      <i class="fa fa-regular fa-play w-25"></i>
+      Ver más
     </button>
-    <!-- End photo grid -->
+    <!-- End Portfolio Section -->
   </div>
-  <!-- End Portfolio Section -->
 </div>
 
 <!-- Contacto Section -->
