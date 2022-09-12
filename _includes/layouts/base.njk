@@ -49,16 +49,16 @@
       </div>
     </nav>
 
-    <div class="main-wrapper container-xl">
-      <header class="header text-uppercase position-absolute">
-        <h1 class="col-12 pt-3 page-title fs-1">
-          <span class="w3-hide-small"></span>
-          {{ metadata.title }}</h1>
-        {# <svg viewBox="0 0 450 50">
+    <header class="header text-uppercase position-absolute">
+      <h1 class="col-12 pt-3 page-title fs-1">
+        <span class="w3-hide-small"></span>
+        {{ metadata.title }}</h1>
+      {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-        <p class="page-subtile fs-2">Video y fotografía</p>
-      </header>
+      <p class="page-subtile fs-2">Video y fotografía</p>
+    </header>
+    <div class="main-wrapper container-xl">
       <main>
         <div id="inicio" class="full-width">
           <img src="/img/portada.jpg" class="banner-image">
@@ -69,7 +69,9 @@
     <!-- Footer -->
   </div>
   <script src="/css/bootstrap/js/bootstrap.min.js"></script>
-  <script> src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"</script>
+  <script>
+    src = "https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"
+  </script>
 
   <!-- Current page: {{ page.url | url }} -->
 </body>

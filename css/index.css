@@ -1,8 +1,8 @@
 .header {
   z-index: 15;
   padding: .5rem;
-  padding-top: 2rem;
-  padding-left: 2rem;
+  padding-top: 5rem;
+  padding-left: 4rem;
   width: 50%;
 }
 
@@ -179,4 +179,21 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,
   border-radius: 50%;
   padding: 2rem;
   background-size: 37%;
+}
+/*  Testimonial */
+.testimonial-slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: #dc3545;
+    border-radius: 100%;
+}
+.testimonial-slider {
+    padding: 0;
+}
+.testimonial-slider .carousel-indicators button {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.carousel-indicators {
+  margin-bottom: -2.5rem;
 }

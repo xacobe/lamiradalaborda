@@ -51,22 +51,39 @@ eleventyNavigation:
   </div>
   <!-- Testimonials -->
   <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mt-2">
-    <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
-    <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px;height:80px;">
-    <p>
-      <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
-    <p>"Fue un placer trabajar  con alguien tan comprometido con su oficio.</p>
-    <p> Su calidez humana y talento hacen que todo resulte con él fácil e inspirador"</p>
-    <br>
+    <h3 class="w3-text-light-grey">Mi reputación</h3>
+    <div class="row">
+      <section class="testimonial-slider">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="text-cent mt-4">
+                <blockquote class="blockquote">
+                  <p>"Fue un placer trabajar  con alguien tan comprometido con su oficio.  Su calidez humana y talento hacen que todo resulte con él fácil e inspirador"</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">Daniel Rodriguez</figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+              <figure class="mt-4">
+                <blockquote class="blockquote">
+                  <p>"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distista.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer mt-2">Javier Rocas</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-
-    <img src="{{ '/img/w3images/chef.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px;height:80px;">
-    <p>
-      <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
-    <p>"Las fotos quedaron estupendas, un resultado impactante, sorprendente. </p>
-    <p>Realmente ve el mundo desde una óptica distista.
-       Cuanta belleza y ternura en su mirada."</p>
-    <br>
   </div>
   <!-- End Sobre mi Section -->
 </div>
