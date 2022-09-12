@@ -41,48 +41,35 @@
   </style>
   <body class="bg-black" data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <div class="wrapper d-flex flex-column flex-md-row">
-      <!-- Icon Bar (Sidebar - hidden on small screens) -->
-      {# <nav class="main-nav text-white flex-column flex-shrink-0 bg-black d-none d-md-flex">
-        <!-- Avatar image in top left corner -->
-        {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      {# {%- for entry in collections.all | eleventyNavigation %} #}
-      {# <a href="{{ entry.url | url }}" class="w3-bar-item w3-button  {% if entry.url == page.url %} w3-black {% else %} w3-hover-black {% endif %}">
-            <i class="fa {{ navFA[entry.title]}} w3-xlarge"></i>
-            <p>{{ entry.title }}</p>
-          </a> #}
-      {# {%- endfor %} #}
-      {# </nav> #}
-      <!-- Navbar on small screens (Hidden on medium and large screens) -->
-      <nav class="w3-top d-block w3-top d-block bg-black text-white p-2" id="myNavbar">
-        <div class="d-flex justify-content-center text-uppercase">
-          {%- for entry in collections.all | eleventyNavigation %}
-            <a href="{{ entry.url | url }}" class="w3-bar-item w3-button">{{ entry.title}}</a>
-          {%- endfor %}
-
-        </div>
+    <nav class="w3-top d-block w3-top d-block bg-black text-white p-2" id="myNavbar">
+      <div class="d-flex justify-content-center text-uppercase">
+        {%- for entry in collections.all | eleventyNavigation %}
+          <a href="{{ entry.url | url }}" class="w3-bar-item w3-button">{{ entry.title}}</a>
+        {%- endfor %}
       </div>
-      <div class="main-wrapper container">
-        <header class="header text-uppercase position-absolute">
-          <h1 class="col-12 pt-3 page-title fs-1">
-            <span class="w3-hide-small"></span>
-            {{ metadata.title }}</h1>
-          {# <svg viewBox="0 0 450 50">
+    </nav>
+
+    <div class="main-wrapper container">
+      <header class="header text-uppercase position-absolute">
+        <h1 class="col-12 pt-3 page-title fs-1">
+          <span class="w3-hide-small"></span>
+          {{ metadata.title }}</h1>
+        {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-          <p class="page-subtile fs-2">Video y fotografía</p>
-        </header>
-        <main>
-            <div id="inicio" class="full-width">
-              <img src="/img/portada.jpg" class="banner-image">
-            </div>
-            {{ content | safe }}
-        </main>
-      </div>
-      <!-- Footer -->
+        <p class="page-subtile fs-2">Video y fotografía</p>
+      </header>
+      <main>
+        <div id="inicio" class="full-width">
+          <img src="/img/portada.jpg" class="banner-image">
+        </div>
+        {{ content | safe }}
+      </main>
     </div>
-    <script src="/css/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+  </div>
+  <script src="/css/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- Current page: {{ page.url | url }} -->
-  </body>
+  <!-- Current page: {{ page.url | url }} -->
+</body>
 </html>

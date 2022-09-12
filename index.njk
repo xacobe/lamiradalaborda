@@ -8,8 +8,8 @@ eleventyNavigation:
 ---
 
 <!-- Sobre mi Section -->
-<div id="about" class="w3-content w3-justify w3-text-grey">
-  <div class="semioscuro p-5 mb-5 mt-5">
+<div id="about" class="content-section w3-content w3-justify w3-text-grey">
+  <div class="semioscuro p-5 mt-5">
 
     <h2 class="w3-text-light-grey">La mirada Laborda</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -30,19 +30,19 @@ eleventyNavigation:
       <div class="col p-3">
         <span class="w3-xlarge">11+</span><br>
             Colaboraciones
-          </div>
+      </div>
       <div class="col p-3">
         <span class="w3-xlarge">55+</span><br>
             Proyectos hechos
-          </div>
+      </div>
       <div class="col p-3">
         <span class="w3-xlarge">89+</span><br>
             Clientes felices
-          </div>
+      </div>
       <div class="col p-3">
         <span class="w3-xlarge">12+</span><br>
             Exposiciones
-          </div>
+      </div>
     </div>
     <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i>
@@ -50,109 +50,84 @@ eleventyNavigation:
     </button>
   </div>
   <!-- Testimonials -->
-  <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mb-5">
+  <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mt-2">
     <h3 class="w3-padding-24 w3-text-light-grey">Mi reputación</h3>
     <img src="{{ '/img/w3images/bandmember.jpg' | url}}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p>
       <span class="w3-large w3-margin-right">Daniel Rodrigue</span> CEO en Mighty Schools.</p>
     <p>Las aportaciones de Eduardo Laborda fueron decisivas para en el resultado final del proyecto</p><br>
 
-    {# <img src="{{ '/img/w3images/avatar_g2.jpg' | url }}" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-      <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-      <p>No one is better than Jane Doe.</p> #}
-
-    <!-- End Sobre mi Section -->
   </div>
-
-  <!-- Portfolio Section -->
-
-{# <div class="w3-content w3-justify w3-text-grey w3-padding-64">
-<h1>Latest 3 Posts</h1>
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
-</div> #}
+  <!-- End Sobre mi Section -->
 </div>
-<div class="w3-padding-64 w3-content semioscuro p-5" id="photos">
-<h2 class="w3-text-light-grey">Mis videos</h2>
-{# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
-<hr style="width:200px" class="w3-opacity">
 
-<!-- Grid for photos -->
-<div class="container">
+<!-- Portfolio Section -->
+<div id="photos" class="content-section w3-padding-64 w3-content semioscuro p-5">
+  <h2 class="w3-text-light-grey">Mis videos</h2>
+  {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
+  <hr style="width:200px" class="w3-opacity">
 
-<style>
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-
-  /* Create two equal columns that sit next to each other */
-  .column {
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 4px;
-  }
-
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  {% raw %}
-    @media (max-width: 600px) {
-      .column {
-        flex: 100%;
-        max-width: 100%;
+  <!-- Grid for photos -->
+  <div class="container">
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
       }
-    {% endraw %}
-</style>
-<div class="row">
 
-  {% for post in collections.videos | head(-10) %}
+      /* Create two equal columns that sit next to each other */
+      .column {
+        flex: 50%;
+        max-width: 50%;
+        padding: 0 4px;
+      }
 
-    <div class="col-lg-6 mb-4">
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+      {% raw %}
+        @media (max-width: 600px) {
+          .column {
+            flex: 100%;
+            max-width: 100%;
+          }
+        {% endraw %}
+    </style>
+    <div class="row">
 
-      {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
-      <p>{{ post.data.videourl }}</p>
+      {% for post in collections.videos | head(-10) %}
 
+        <div class="col-lg-6 mb-4">
+
+          {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
+          <p>{{ post.data.videourl }}</p>
+
+        </div>
+      {% endfor %}
     </div>
-  {% endfor %}
+    <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('/videos', '_self')">
+      <i class="fa fa-download"></i>
+      Ver todos los videos
+    </button>
+    <!-- End photo grid -->
+  </div>
+  <!-- End Portfolio Section -->
 </div>
 
-<!-- End photo grid -->
-</div>
-<!-- End Portfolio Section -->
-</div>
 <!-- Contacto Section -->
-<div class="semioscuro p-5 mb-5 text-white w3-content w3-text-grey" id="contact">
-<h2 class="w3-text-light-grey">Contacto</h2>
-<hr style="width:200px" class="w3-opacity">
+<div id="contact" class="content-section semioscuro p-5 text-white w3-content w3-text-grey">
+  <h2 class="w3-text-light-grey">Contacto</h2>
+  <hr style="width:200px" class="w3-opacity">
 
-<div class="w3-section">
-  <p>
-    <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
-  {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
-  <p>
-    <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
-  </p>
-</div><br>
-
-{# <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey " type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form> #}
-<!-- End Contacto Section -->
-</div>
-
+  <div class="w3-section">
+    <p>
+      <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
+    {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
+    <p>
+      <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
+    </p>
+  </div><br>
+  <!-- End Contacto Section -->
 </div>
