@@ -126,11 +126,24 @@ main {
 background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 4%, rgba(0,0,0,1) 7%, rgba(0,0,0,0) 100%);
   z-index: -1;
 }
+.footer {
+  background: #333;
+  color: #999;
+}
+.footer a{
+  color: #999;
+}
 .full-width {
   width: 100vw;
   position: relative;
   margin-left: -50vw;
   left: 50%;
+}
+/* Override Bootstrap */
+.btn-outline-success[aria-current="page"] {
+  color: var(--bs-btn-active-color);
+  background-color: var(--bs-btn-active-bg);
+  border-color: var(--bs-btn-active-border-color);
 }
 /* Utility class (Boostrap) */
 .fs-1 {
