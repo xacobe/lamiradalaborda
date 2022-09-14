@@ -1,0 +1,9 @@
+
+{# Video grid #}
+<div class="video-grid pb-3 row">
+  {%- for item in pagination.items %}
+    <div class="col-md-6 p-4">
+      <p>{{ item.data.videourl }}</p>
+    </div>
+  {% endfor -%}
+</div>

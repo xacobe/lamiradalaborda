@@ -1,31 +1,5 @@
----
-layout: layouts/home.njk
-pagination:
-    data: collections.videos
-    size: 6
-    alias: videos
-eleventyNavigation:
-  key: Contacto
-  order: 4
-  url: /#contact
----
-{# Inicio #}
-<div id="inicio" class="full-width content-section">
-  <img src="/img/portada.jpg" class="banner-image banner-image--small">
-</div>
-{# Grid for photos  #}
-<div class="container-xl">
-  {# Print elements #}
-  <section class="pb-4">
-    <div class="video-grid pb-3 row">
-      {%- for item in pagination.items %}
-        <div class="col-md-6 p-4">
-          <p>{{ item.data.videourl }}</p>
-        </div>
-      {% endfor -%}
-    </div>
-    {# Pagination #}
-    <nav aria-labelledby="my-pagination" class="position-relative">
+{# Pagination #}
+    <nav aria-labelledby="paginador" class="position-relative pb-3 pb-md-5">
       <h2 id="my-pagination" class="visually-hidden">Paginación</h2>
       <ol class="pagination position-absolute top-0 start-50 translate-middle-x">
         {% if pagination.href.previous %}
@@ -45,6 +19,3 @@ eleventyNavigation:
         {% endif %}
       </ol>
     </nav>
-  </section>
-
-  {#  End photo grid #}

@@ -1,9 +1,13 @@
 ---
 layout: layouts/home.njk
 pagination:
-    data: collections.documental
+    data: collections.videos
     size: 6
-    alias: documental
+    alias: videos
+eleventyNavigation:
+  key: Contacto
+  order: 4
+  url: /#contact
 ---
 {# Inicio #}
 <div id="inicio" class="full-width content-section">
@@ -11,7 +15,7 @@ pagination:
 </div>
 {# Grid for photos  #}
 <div class="container-xl">
-  <h2> Vídeos documentales</h2>
+  <h2> Vídeos</h2>
   {% include "components/video-nav.njk" %}
   <section class="pb-4">
   {# Video grid #}

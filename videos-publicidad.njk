@@ -12,36 +12,12 @@ permalink: /videos-publicidad/
 </div>
 {# Grid for photos  #}
 <div class="container-xl">
-  {# Print elements #}
+  <h2> Vídeos de publicidad</h2>
+  {% include "components/video-nav.njk" %}
   <section class="pb-4">
-    <div class="video-grid pb-3 row">
-      {%- for item in pagination.items %}
-        <div class="col-md-6 p-4">
-          <p>{{ item.data.videourl }}</p>
-        </div>
-      {% endfor -%}
-    </div>
-    {# Pagination #}
-    <nav aria-labelledby="my-pagination" class="position-relative">
-      <h2 id="my-pagination" class="visually-hidden">Paginación</h2>
-      <ol class="pagination position-absolute top-0 start-50 translate-middle-x">
-        {% if pagination.href.previous %}
-          <li class="page-item">
-            <a class="page-link" href="{{ pagination.href.previous }}"><</a>
-          </li>
-            {% endif %}
-          {%- for pageEntry in pagination.pages %}
-            <li class="page-item">
-              <a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a>
-            </li>
-          {%- endfor %}
-            {% if pagination.href.next %}
-          <li class="page-item">
-              <a class="page-link" href="{{ pagination.href.next }}">></a>
-          </li>
-        {% endif %}
-      </ol>
-    </nav>
+  {# Video grid #}
+  {% include "components/video-grid.njk" %}
+  {# Pagination #}
+  {% include "components/pagination.njk" %}
   </section>
-
-  {#  End photo grid #}
+</div>
