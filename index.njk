@@ -95,7 +95,7 @@ eleventyNavigation:
   <hr style="width:200px" class="w3-opacity">
 
   <!-- Grid for photos -->
-  <div class="container-xl text-center">
+  <div class="">
     <style>
       .row {
         display: flex;
@@ -122,7 +122,7 @@ eleventyNavigation:
           }
         {% endraw %}
     </style>
-    <div class="row">
+    <div class="row text-center">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -135,7 +135,6 @@ eleventyNavigation:
           {% for post in collections.videos | head(-2) %}
             <div class="carousel-item">
               <div class="col-lg-12 mb-4">
-                {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
                 <div class="d-block w-100">
                   <p>{{ post.data.videourl }}</p>
                 </div>
