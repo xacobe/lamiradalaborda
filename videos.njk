@@ -1,5 +1,9 @@
 ---
 layout: layouts/home.njk
+pagination:
+    data: collections.videos
+    size: 6
+    alias: videos
 eleventyNavigation:
   key: Contacto
   order: 4
@@ -37,16 +41,38 @@ eleventyNavigation:
   </style>
   <div class="row">
 
-    {% for post in collections.videos %}
+  {# Print elements #}
 
-      <div class="col-lg-6 mb-4">
+  <section class="pb-4">
+    <div class="video-grid pb-3 row">
+      {%- for item in pagination.items %}
+        <div class="col-md-6 p-4">
+          <p>{{ item.data.videourl }}</p>
+        </div>
+      {% endfor -%}
+    </div>
 
-        {# <a href="{{ post.url | url}}"><img src = "{{ post.data.image | url }}" style="width:100%;margin-bottom:0px" > </a> #}
-        <p>{{ post.data.videourl }}</p>
+    {# Pagination #}
+    <nav aria-labelledby="my-pagination" class="position-relative">
+      <h2 id="my-pagination" class="visually-hidden">Paginación</h2>
+      <ol class="pagination position-absolute top-0 start-50 translate-middle-x">
+        {% if pagination.href.previous %}
+          <li class="page-item">
+            <a class="page-link" href="{{ pagination.href.previous }}"><</a>
+          </li>
+            {% endif %}
+          {%- for pageEntry in pagination.pages %}
+            <li class="page-item">
+              <a class="page-link" href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a>
+            </li>
+          {%- endfor %}
+            {% if pagination.href.next %}
+          <li class="page-item">
+              <a class="page-link" href="{{ pagination.href.next }}">></a>
+          </li>
+        {% endif %}
+      </ol>
+    </nav>
+  </section>
 
-      </div>
-    {% endfor %}
-  </div>
-
-  <!-- End photo grid -->
-</div>
+  {#  End photo grid #}
