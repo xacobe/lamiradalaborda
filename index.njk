@@ -1,13 +1,15 @@
 ---
 layout: layouts/home.njk
-fa-icon: 'fa-home'
 eleventyNavigation:
   key: Inicio
   order: 1
   url: /#inicio
 ---
-
-<!-- Sobre mi Section -->
+{# Inicio #}
+<div id="inicio" class="full-width content-section">
+  <img src="/img/portada.jpg" class="banner-image">
+</div>
+{# Sobre mi Section #}
 <div id="about" class="content-section w3-content w3-justify w3-text-grey">
   <div class="semioscuro p-3 p-lg-5 mt-5">
 
@@ -49,7 +51,7 @@ eleventyNavigation:
       Descargar resumen
     </button>
   </div>
-  <!-- Testimonials -->
+  {# Testimonials #}
   <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-5 mt-2">
     <h3 class="w3-text-light-grey">Mi reputación</h3>
     <div class="row">
@@ -85,16 +87,16 @@ eleventyNavigation:
     </div>
 
   </div>
-  <!-- End Sobre mi Section -->
+  {# End Sobre mi Section #}
 </div>
 
-<!-- Portfolio Section -->
+{# Portfolio Section #}
 <div id="photos" class="content-section w3-padding-64 w3-content semioscuro p-3 p-lg-5">
   <h2 class="w3-text-light-grey">Mis videos</h2>
   {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
   <hr style="width:200px" class="w3-opacity">
 
-  <!-- Grid for photos -->
+{# Grid for photos #}
   <div class="text-center">
     <style>
       .row {
@@ -142,7 +144,6 @@ eleventyNavigation:
             </div>
           {% endfor %}
         </div>
-
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -152,17 +153,17 @@ eleventyNavigation:
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!-- End photo grid -->
+      {# End photo grid #}
     </div>
     <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('/videos', '_self')">
       <i class="fa fa-regular fa-play w-25"></i>
       Ver más
     </button>
-    <!-- End Portfolio Section -->
+    {# End Portfolio Section #}
   </div>
 </div>
 
-<!-- Contacto Section -->
+{# Contacto Section #}
 <div id="contact" class="content-section semioscuro p-5 text-white w3-content w3-text-grey">
   <h2 class="w3-text-light-grey">Contacto</h2>
   <hr style="width:200px" class="w3-opacity">
@@ -175,5 +176,5 @@ eleventyNavigation:
       <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
     </p>
   </div><br>
-  <!-- End Contacto Section -->
+{# End Contacto Section #}
 </div>
