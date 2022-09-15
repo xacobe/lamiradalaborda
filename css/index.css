@@ -89,7 +89,6 @@ span.w3-hide-small {
   position: relative;
 }
 .banner-image {
-  content: "";
   display: block;
   width: 100%;
   z-index: -1;
