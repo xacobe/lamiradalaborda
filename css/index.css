@@ -290,3 +290,8 @@ main {
 .page-item:first-child .page-link {
   border-radius: 3rem;
 }
+
+/* Contact form */
+label {
+  color: #777;
+}

@@ -8,7 +8,8 @@ eleventyNavigation:
 {# Inicio #}
 <header id="inicio" class="header text-uppercase">
   <h1 class="col-12 pt-3 page-title fs-1">
-    <p class=" mx-auto ms-md-5">{{ metadata.title }}</p></h1>
+    <p class=" mx-auto ms-md-5">{{ metadata.title }}</p>
+  </h1>
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
@@ -153,11 +154,11 @@ eleventyNavigation:
         </div>
         <button class="carousel-control-prev float-start float-lg-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next float-start float-lg-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
       {# End photo grid #}
@@ -175,13 +176,43 @@ eleventyNavigation:
   <h2 class="w3-text-light-grey">Contacto</h2>
   <hr style="width:200px" class="w3-opacity">
 
-  <div class="w3-section">
-    <p>
-      <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
-    {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
-    <p>
-      <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
-    </p>
-  </div><br>
+  <div class="row">
+    <div class="col-md-6">
+      <p>
+        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
+      {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
+      <p>
+        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
+      </p>
+    </div>
+    <div class="col-md-6">
+      <form name="contacto-edu" method="POST" data-netlify="true">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-floating mb-3">
+              <input type="text" name="name" class="form-control rounded-0" placeholder="Nombre">
+              <label for="name" class="form-label">Nombre </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating mb-3">
+              <input type="email" name="email" class="form-control rounded-0" placeholder="example@example.com"/>
+              <label for="email" class="form-label">Email </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-floating mb-3">
+              <textarea name="message" class="form-control rounded-0" placeholder="Mensaje" style="height: 150px;"></textarea>
+              <label for="message" class="form-label">Mensaje
+            </div>
+          </div>
+        </div>
+        <p>
+          <button type="submit" class="w3-button w3-button-primary w3-light-grey  w3-section">Enviar</button>
+        </p>
+      </form>
+    </div>
+  </div>
+
   {# End Contacto Section #}
 </section>
