@@ -126,11 +126,14 @@ background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 0%, rgba(0,0,
   z-index: -1;
 }
 .footer {
-  background: #333;
+  background: #252525;
   color: #999;
 }
 .footer a{
   color: #999;
+}
+.border-bottom {
+  border-bottom: solid 1px rgb(74, 74, 74) !important;
 }
 .full-width {
   width: 100vw;
