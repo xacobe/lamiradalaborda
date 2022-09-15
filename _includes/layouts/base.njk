@@ -63,13 +63,15 @@
     </main>
     <footer class="footer pt-3 pt-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">About</a></li>
+      {%- for entry in collections.all | eleventyNavigation %}
+      <li class="nav-item">
+          <a href="{{ entry.url | url }}" class="nav-link px-2">{{ entry.title}}</a>
+      </li>
+        {%- endfor %}
     </ul>
-    <p class="text-center">© 2022 Company, Inc</p>
+    <p class="text-center">© <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script> La mirada Laborda</p>
   </footer>
   </div>
   <script src="/css/bootstrap/js/bootstrap.min.js"></script>
