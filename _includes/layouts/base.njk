@@ -41,7 +41,7 @@
   </style>
   <body class="bg-black" data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <nav class="w3-top d-block w3-top d-block bg-black text-white p-2" id="myNavbar">
+    <nav class="w3-top d-block w3-top d-block bg-black semitransparente text-white p-2" id="myNavbar">
       <div class="d-flex justify-content-center text-uppercase">
         {%- for entry in collections.all | eleventyNavigation %}
           <a href="{{ entry.url | url }}" class="w3-bar-item w3-button">{{ entry.title}}</a>
@@ -49,16 +49,8 @@
       </div>
     </nav>
 
-    <header class="header text-uppercase position-absolute">
-      <h1 class="col-12 pt-3 page-title fs-1">
-        <span class="w3-hide-small"></span>
-        {{ metadata.title }}</h1>
-      {# <svg viewBox="0 0 450 50">
-            <text y="50">{{ metadata.title }}</text>
-          </svg> #}
-      <p class="page-subtile fs-2">Video y fotografía</p>
-    </header>
-    <main class="main-wrapper container-xl p-0 p-md-5">
+    {# Main content #}
+    <main class="main-wrapper">
       {{ content | safe }}
     </main>
     <footer class="footer pt-3 pt-4">

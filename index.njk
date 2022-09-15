@@ -6,11 +6,19 @@ eleventyNavigation:
   url: /#inicio
 ---
 {# Inicio #}
-<div id="inicio" class="full-width content-section">
-  <img src="/img/portada.jpg" class="banner-image">
-</div>
+<header id="inicio" class="header text-uppercase">
+  <h1 class="col-12 pt-3 page-title fs-1">
+    <p class=" mx-auto ms-md-5">{{ metadata.title }}</p></h1>
+  {# <svg viewBox="0 0 450 50">
+            <text y="50">{{ metadata.title }}</text>
+          </svg> #}
+  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Video y fotografía</p>
+  <div class="wrapper-banner-image content-section">
+    <img src="/img/portada.jpg" class="banner-image">
+  </div>
+</header>
 {# Sobre mi Section #}
-<div id="about" class="content-section w3-content w3-justify w3-text-grey">
+<section id="about" class="content-section w3-content w3-justify w3-text-grey">
   <div class="semioscuro p-4 p-md-5">
 
     <h2 class="w3-text-light-grey">La mirada Laborda</h2>
@@ -52,7 +60,7 @@ eleventyNavigation:
     </button>
   </div>
   {# Testimonials #}
-  <div class="w3-content w3-justify w3-text-grey semioscuro text-white  p-4 p-md-5 mt-1">
+  <div class="w3-content w3-justify w3-text-grey semioscuro text-white  p-4 p-md-5 mt-1 pb-5">
     <h3 class="w3-text-light-grey">Mi reputación</h3>
     <div class="row">
       <section class="testimonial-slider">
@@ -87,15 +95,15 @@ eleventyNavigation:
 
   </div>
   {# End Sobre mi Section #}
-</div>
+</section>
 
 {# Portfolio Section #}
-<div id="videos" class="content-section w3-padding-64 w3-content semioscuro p-2 p-lg-5 overflow-hidden">
+<section id="videos" class="content-section w3-padding-64 w3-content semioscuro p-2 p-lg-5 py-5 overflow-hidden pb-3">
   <h2 class="w3-text-light-grey ps-2 ps-md-4 ps-lg-1">Mis videos</h2>
   {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
-  <hr style="width:200px" class="w3-opacity">
+  <hr style="width:200px" class="w3-opacity ms-2 ms-md-4 ms-lg-1">
 
-{# Grid for photos #}
+  {# Grid for photos #}
   <div class="text-center">
     <style>
       .row {
@@ -160,10 +168,10 @@ eleventyNavigation:
     </button>
     {# End Portfolio Section #}
   </div>
-</div>
+</section>
 
 {# Contacto Section #}
-<div id="contact" class="content-section semioscuro p-4 p-md-5 text-white w3-content w3-text-grey mb-2">
+<section id="contact" class="content-section semioscuro p-4 p-md-5 text-white w3-content w3-text-grey mb-2">
   <h2 class="w3-text-light-grey">Contacto</h2>
   <hr style="width:200px" class="w3-opacity">
 
@@ -175,5 +183,5 @@ eleventyNavigation:
       <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
     </p>
   </div><br>
-{# End Contacto Section #}
-</div>
+  {# End Contacto Section #}
+</section>

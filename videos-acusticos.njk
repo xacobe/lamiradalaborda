@@ -6,9 +6,18 @@ pagination:
     alias: acustico
 ---
 {# Inicio #}
-<div id="inicio" class="full-width content-section">
-  <img src="/img/portada.jpg" class="banner-image banner-image--small">
-</div>
+<header id="inicio" class="header header--small text-uppercase">
+  <h1 class="col-12 pt-3 page-title fs-1">
+    <span class="w3-hide-small"></span>
+    {{ metadata.title }}</h1>
+  {# <svg viewBox="0 0 450 50">
+            <text y="50">{{ metadata.title }}</text>
+          </svg> #}
+  <p class="page-title fs-2">Video y fotografía</p>
+  <div class="wrapper-banner-image content-section">
+    <img src="/img/portada.jpg" class="banner-image">
+  </div>
+</header>
 {# Grid for photos  #}
 <div class="container-xl">
   <h2> Vídeos de acústicos</h2>
