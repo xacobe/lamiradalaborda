@@ -152,6 +152,10 @@ main {
 .footer a {
   color: #999;
 }
+.footer a:hover {
+  color: #999;
+  text-decoration: underline;
+}
 .border-bottom {
   border-bottom: solid 1px rgb(74, 74, 74) !important;
 }
