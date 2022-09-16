@@ -6,15 +6,22 @@ pagination:
     alias: publicidad
 permalink: /videos-publicidad/
 ---
-{# Inicio #}
-<div id="inicio" class="full-width content-section">
-  <img src="/img/portada.jpg" class="banner-image banner-image--small">
-</div>
+<header id="inicio" class="header text-uppercase header--small">
+  <h1 class="col-12 pt-3 page-title fs-1">
+    <p class="mx-auto ms-md-5">{{ metadata.title }}</p></h1>
+  {# <svg viewBox="0 0 450 50">
+            <text y="50">{{ metadata.title }}</text>
+          </svg> #}
+  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Video y fotografía</p>
+  <div class="wrapper-banner-image content-section">
+    <img src="/img/banner-video.jpg" class="banner-image banner-image--small">
+  </div>
+</header>
 {# Grid for photos  #}
 <div class="container-xl">
   <h2> Vídeos de publicidad</h2>
   {% include "components/video-nav.njk" %}
-  <section class="pb-4">
+  <section>
   {# Video grid #}
   {% include "components/video-grid.njk" %}
   {# Pagination #}
