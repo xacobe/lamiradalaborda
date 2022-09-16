@@ -1,10 +1,9 @@
 ---
 layout: layouts/home.njk
 pagination:
-    data: collections.publicidad
-    size: 6
+    data: videoList.publicidad
+    size: 8
     alias: publicidad
-permalink: /videos-publicidad/
 ---
 <header id="inicio" class="header text-uppercase header--small">
   <h1 class="col-12 pt-3 page-title fs-1">
@@ -18,13 +17,15 @@ permalink: /videos-publicidad/
   </div>
 </header>
 {# Grid for photos  #}
-<div class="container-xl">
-  <h2> Vídeos de publicidad</h2>
-  {% include "components/video-nav.njk" %}
-  <section>
-  {# Video grid #}
-  {% include "components/video-grid.njk" %}
-  {# Pagination #}
-  {% include "components/pagination.njk" %}
-  </section>
+<div class="bg-black">
+  <div class="container-xl pt-5">
+    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Vídeos de publicidad</h2>
+    {% include "components/video-nav.njk" %}
+    <section>
+    {# Video grid #}
+    {% include "components/video-grid.njk" %}
+    {# Pagination #}
+    {% include "components/pagination.njk" %}
+    </section>
+  </div>
 </div>

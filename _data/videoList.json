@@ -1,16 +1,454 @@
-[
+{
+  "all": [
   {
-      "title" : "Los Artistas Bonbajel Mayaetik",
-      "published-date" : "2014-02-25",
-      "tags" : "videos",
-      "video" : "documental",
-      "videourl" : "https://www.youtube.com/watch?v=BROwzXOL3Vc"
+    "videoTitle": "Rock tsotsil de San Juan Chamula",
+    "published-date": "2010-08-28",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "Sc7LQLYR_0Q"
   },
   {
-      "title" : "Bonbajel Mayaetik",
-      "published-date" : "2014-02-25",
-      "tags" : "videos",
-      "video" : "documental",
-      "videourl" : "https://www.youtube.com/watch?v=BROwzXOL3Vc"
+    "videoTitle": "Los Artistas Bonbajel Mayaetik",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "OeF3yL7_k_c"
+  },
+  {
+    "videoTitle": "PERSEGUIDAS (videoclip) #NoCallarem #FreeValtonyc",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "BROwzXOL3Vc"
+  },
+  {
+    "videoTitle": "Bonbajel Mayaetik",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "BROwzXOL3Vc"
+  },
+  {
+    "videoTitle": "Mallata Rapún casa rural",
+    "published-date": "2016-11-24",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "lfbfQsV34_o"
+  },
+  {
+    "videoTitle": "Opoloh - Yo mismo",
+    "published-date": "2017-03-27",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "XLAfyl6H0P0"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Uma história por lembrar",
+    "published-date": "2017-12-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "T7yEyJwAKhU"
+  },
+  {
+    "videoTitle": "SISU - Carta a l'Amanta",
+    "published-date": "2018-11-27",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "SNT43sJYqjw"
+  },
+  {
+    "videoTitle": "Opoloh - Estrellita",
+    "published-date": "2018-03-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "O4kjLSJB-Uk"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs i Opoloh - Pa' empezar [Miguel Campello]",
+    "published-date": "2018-04-30",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "XjqsTgwXLhE"
+  },
+  {
+    "videoTitle": "Opoloh - El Druida Ermitaño",
+    "published-date": "2018-05-01",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "JEcrwRCCDG8"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs i Guillem Boada - Todo homem [Caetano Veloso]",
+    "published-date": "2018-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "ztJoFUYt_8Y"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs - Ejecución pública [Chicho Sánchez Ferlosio]",
+    "published-date": "2019-03-01",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "lsa3bJaCRe8"
+  },
+  {
+    "videoTitle": "Opoloh - Te cielo",
+    "published-date": "2019-03-20",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "s2Fq1RSuVJ8"
+  },
+  {
+    "videoTitle": "Opoloh - Nada (con Sílvia Tomàs)",
+    "published-date": "2019-05-24",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "5sHxdgTx_Tw"
+  },
+  {
+    "videoTitle": "La fuga de l'home cranc - Guillem Sala",
+    "published-date": "2019-06-05",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "ZwoeFBqVE2c"
+  },
+  {
+    "videoTitle": "MISTERY - Dulce Laia",
+    "published-date": "2019-09-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "pZh8zuMCucY"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs - Malditas elecciones [Chicho Sánchez Ferlosio]",
+    "published-date": "2019-12-08",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "pO9jOq6MLuA"
+  },
+  {
+    "videoTitle": "Lali BeGood - Vull moviment!",
+    "published-date": "2019-12-23",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "6hkba1aXj-k"
+  },
+  {
+    "videoTitle": "Projecte NA! For You",
+    "published-date": "2019-12-28",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "171w1KPIuH0"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Techo de paja [Tonolec]",
+    "published-date": "2020-03-13",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "HaKbTSEsRuk"
+  },
+  {
+    "videoTitle": "POWER GIRL - Dulce Laia",
+    "published-date": "2022-01-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "fyUBpK0XHlc"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - FINS QUAN?",
+    "published-date": "2022-03-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "8-0YvdQDbwQ"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas",
+    "published-date": "2022-04-07",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "hQ1R0er__7k"
+  },
+  {
+    "videoTitle": "SISU - Cop d'estat global",
+    "published-date": "2020-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "Pz2NnXGsNFA"
+  }
+],
+"videoclips": [
+  {
+    "videoTitle": "Rock tsotsil de San Juan Chamula",
+    "published-date": "2010-08-28",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "Sc7LQLYR_0Q"
+  },
+  {
+    "videoTitle": "PERSEGUIDAS (videoclip) #NoCallarem #FreeValtonyc",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "BROwzXOL3Vc"
+  },
+  {
+    "videoTitle": "Opoloh - Yo mismo",
+    "published-date": "2017-03-27",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "XLAfyl6H0P0"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Uma história por lembrar",
+    "published-date": "2017-12-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "T7yEyJwAKhU"
+  },
+  {
+    "videoTitle": "SISU - Carta a l'Amanta",
+    "published-date": "2018-11-27",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "SNT43sJYqjw"
+  },
+  {
+    "videoTitle": "Opoloh - Estrellita",
+    "published-date": "2018-03-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "O4kjLSJB-Uk"
+  },
+  {
+    "videoTitle": "Opoloh - El Druida Ermitaño",
+    "published-date": "2018-05-01",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "JEcrwRCCDG8"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs i Guillem Boada - Todo homem [Caetano Veloso]",
+    "published-date": "2018-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "ztJoFUYt_8Y"
+  },
+  {
+    "videoTitle": "Opoloh - Te cielo",
+    "published-date": "2019-03-20",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "s2Fq1RSuVJ8"
+  },
+  {
+    "videoTitle": "Opoloh - Nada (con Sílvia Tomàs)",
+    "published-date": "2019-05-24",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "5sHxdgTx_Tw"
+  },
+  {
+    "videoTitle": "MISTERY - Dulce Laia",
+    "published-date": "2019-09-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "pZh8zuMCucY"
+  },
+  {
+    "videoTitle": "Lali BeGood - Vull moviment!",
+    "published-date": "2019-12-23",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "6hkba1aXj-k"
+  },
+  {
+    "videoTitle": "Projecte NA! For You",
+    "published-date": "2019-12-28",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "171w1KPIuH0"
+  },
+  {
+    "videoTitle": "POWER GIRL - Dulce Laia",
+    "published-date": "2022-01-05",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "fyUBpK0XHlc"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - FINS QUAN?",
+    "published-date": "2022-03-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "8-0YvdQDbwQ"
+  },
+  {
+    "videoTitle": "SISU - Cop d'estat global",
+    "published-date": "2020-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "Pz2NnXGsNFA"
+  }
+],
+"documentales": [
+  {
+    "videoTitle": "Los Artistas Bonbajel Mayaetik",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "OeF3yL7_k_c"
+  },
+  {
+    "videoTitle": "Bonbajel Mayaetik",
+    "published-date": "2014-02-25",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "BROwzXOL3Vc"
+  }
+],
+
+"publicidad": [
+  {
+    "videoTitle": "Mallata Rapún casa rural",
+    "published-date": "2016-11-24",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "lfbfQsV34_o"
+  },
+  {
+    "videoTitle": "La fuga de l'home cranc - Guillem Sala",
+    "published-date": "2019-06-05",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "ZwoeFBqVE2c"
+  }
+],
+"acusticos": [
+  {
+    "videoTitle": "Sílvia Tomàs i Opoloh - Pa' empezar [Miguel Campello]",
+    "published-date": "2018-04-30",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "XjqsTgwXLhE"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs - Ejecución pública [Chicho Sánchez Ferlosio]",
+    "published-date": "2019-03-01",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "lsa3bJaCRe8"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs - Malditas elecciones [Chicho Sánchez Ferlosio]",
+    "published-date": "2019-12-08",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "pO9jOq6MLuA"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas",
+    "published-date": "2022-04-07",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "hQ1R0er__7k"
   }
 ]
+}

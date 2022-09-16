@@ -1,8 +1,8 @@
 ---
 layout: layouts/home.njk
 pagination:
-    data: collections.videoclip
-    size: 6
+    data: videoList.videoclips
+    size: 8
     alias: videoclip
 ---
 <header id="inicio" class="header text-uppercase header--small">
@@ -17,13 +17,15 @@ pagination:
   </div>
 </header>
 {# Grid for photos  #}
-<div class="container-xl">
-  <h2> Vídeos de videoclips</h2>
-  {% include "components/video-nav.njk" %}
-  <section>
-  {# Video grid #}
-  {% include "components/video-grid.njk" %}
-  {# Pagination #}
-  {% include "components/pagination.njk" %}
-  </section>
+<div class="bg-black">
+  <div class="container-xl pt-5">
+    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Vídeos de videoclips</h2>
+    {% include "components/video-nav.njk" %}
+    <section>
+    {# Video grid #}
+    {% include "components/video-grid.njk" %}
+    {# Pagination #}
+    {% include "components/pagination.njk" %}
+    </section>
+  </div>
 </div>

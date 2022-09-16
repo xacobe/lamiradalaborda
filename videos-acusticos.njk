@@ -1,8 +1,8 @@
 ---
 layout: layouts/home.njk
 pagination:
-    data: collections.acustico
-    size: 6
+    data: videoList.acusticos
+    size: 8
     alias: acustico
 ---
 {# Inicio #}
@@ -18,13 +18,15 @@ pagination:
   </div>
 </header>
 {# Grid for photos  #}
-<div class="container-xl">
-  <h2> Vídeos de acústicos</h2>
-  {% include "components/video-nav.njk" %}
-  <section>
-  {# Video grid #}
-  {% include "components/video-grid.njk" %}
-  {# Pagination #}
-  {% include "components/pagination.njk" %}
-  </section>
+<div class="bg-black">
+  <div class="container-xl pt-5">
+    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Vídeos de acústicos</h2>
+    {% include "components/video-nav.njk" %}
+    <section>
+    {# Video grid #}
+    {% include "components/video-grid.njk" %}
+    {# Pagination #}
+    {% include "components/pagination.njk" %}
+    </section>
+  </div>
 </div>

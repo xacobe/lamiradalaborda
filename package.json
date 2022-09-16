@@ -23,7 +23,7 @@
   },
   "iniciopage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-navigation": "^0.1.3",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
