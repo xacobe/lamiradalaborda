@@ -1,6 +1,5 @@
 ---
 title: Opoloh - El Druida Ermitaño
-description: This is a photo called wedding
 date: 2018-05-01
 tags:
   - videos
