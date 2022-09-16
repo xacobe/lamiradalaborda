@@ -3,11 +3,10 @@
 {# <script src="/javascript/lite-yt-embed.js"></script> #}
 <!-- Web component for lite-youtube-embed -->
 <!-- Web component for lite-youtube-embed -->
-{# <p>{{ item.data.videourl }}</p> #}
-{# <p class="xxx">{{ collections.documental }}</p> #}
-<p class="xxx">{{ item.videoId|log }}</p>
 <lite-youtube videoid="{{ item.videoId }}" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %} autoload>
   <button type="button" class="lty-playbtn">
     <span class="lyt-visually-hidden">Play Video: {{ item.videoTitle }}</span>
   </button>
 </lite-youtube>
+<h3 class="pt-4 pt-lg-5">{{ item.videoTitle }}</h3>
+<date class="bg-white p-1 fw-bold text-black">{{ item.published_date }}</date>

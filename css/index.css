@@ -242,6 +242,7 @@ main {
 .carousel-control-prev {
   position: relative;
   width: 50%;
+  opacity: 1;
 }
 @media (min-width: 992px) {
   .carousel-control-next,
@@ -315,7 +316,7 @@ lite-youtube {
     background-position: center center;
     background-size: cover;
     cursor: pointer;
-    max-width: 720px;
+    max-width: 100%;
 }
 
 /* gradient */
