@@ -55,7 +55,7 @@ eleventyNavigation:
             Exposiciones
       </div>
     </div>
-    <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
+    <button class="w3-button w3-button-primary" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i>
       Descargar resumen
     </button>
@@ -75,7 +75,7 @@ eleventyNavigation:
               <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
               <figure class="text-cent mt-4">
                 <blockquote class="blockquote">
-                  <p>"Fue un placer trabajar  con alguien tan comprometido con su oficio.  Su calidez humana y talento hacen que todo resulte con él fácil e inspirador"</p>
+                  <p class="height-testimonial">"Fue un placer trabajar  con alguien tan comprometido con su oficio.  Su calidez humana y talento hacen que todo resulte con él fácil e inspirador"</p>
                 </blockquote>
                 <figcaption class="blockquote-footer mt-2">Daniel Rodriguez</figcaption>
               </figure>
@@ -84,11 +84,12 @@ eleventyNavigation:
               <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
               <figure class="mt-4">
                 <blockquote class="blockquote">
-                  <p>"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distista.</p>
+                  <p class="height-testimonial">"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distista.</p>
                 </blockquote>
                 <figcaption class="blockquote-footer mt-2">Javier Rocas</figcaption>
               </figure>
             </div>
+            <div class="carousel-fake">
           </div>
         </div>
       </section>
@@ -99,7 +100,7 @@ eleventyNavigation:
 </section>
 
 {# Portfolio Section #}
-<section id="videos" class="content-section w3-padding-64 w3-content semioscuro p-2 p-lg-5 py-5 overflow-hidden pb-3">
+<section id="videos" class="content-section w3-padding-64 w3-content semioscuro p-2 p-lg-5 py-5 overflow-hidden pb-4">
   <h2 class="w3-text-light-grey ps-2 ps-md-4 ps-lg-1">Mis videos</h2>
   {# <p>https://www.youtube.com/watch?v=5sHxdgTx_Tw&list=PLqfqm_U5gMLlP5XSANN1uSYl-UO4jrgrx&index=3</p> #}
   <hr style="width:200px" class="w3-opacity ms-2 ms-md-4 ms-lg-1">
@@ -153,17 +154,17 @@ eleventyNavigation:
           {% endfor %}
         </div>
         <button class="carousel-control-prev float-start float-lg-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon p-4 p" aria-hidden="true"></span>
           <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next float-start float-lg-none" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon p-4" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
       </div>
       {# End photo grid #}
     </div>
-    <button class="w3-button w3-button-primary w3-light-grey  w3-section" onclick="window.open('/videos-todos', '_self')">
+    <button class="w3-button w3-button-primary" onclick="window.open('/videos-todos', '_self')">
       <i class="fa fa-regular fa-play w-25"></i>
       Ver más
     </button>
