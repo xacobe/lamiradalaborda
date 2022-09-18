@@ -64,7 +64,7 @@ h6 {
   z-index: -1;
   height: 100vh;
   object-fit: cover;
-  object-position: right;
+  object-position: top;
   position: relative;
 }
 text.titulo {
