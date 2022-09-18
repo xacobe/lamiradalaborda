@@ -11,7 +11,7 @@
   },
   {
     "videoTitle": "Los Artistas Bonbajel Mayaetik",
-    "published_date": "2014-02-25",
+    "published_date": "2014-02-27",
     "tags": [
       "videos",
       "documental"
@@ -20,12 +20,12 @@
   },
   {
     "videoTitle": "PERSEGUIDAS (videoclip) #NoCallarem #FreeValtonyc",
-    "published_date": "2014-02-25",
+    "published_date": "2018-05-21",
     "tags": [
       "videos",
       "videoclip"
     ],
-    "videoId": "BROwzXOL3Vc"
+    "videoId": "063p_4V9kOo"
   },
   {
     "videoTitle": "Bonbajel Mayaetik",
@@ -212,7 +212,7 @@
     "published_date": "2022-04-07",
     "tags": [
       "videos",
-      "acustico"
+      "videoclip"
     ],
     "videoId": "hQ1R0er__7k"
   },
@@ -253,15 +253,6 @@
       "acustico"
     ],
     "videoId": "pO9jOq6MLuA"
-  },
-  {
-    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas",
-    "published_date": "2022-04-07",
-    "tags": [
-      "videos",
-      "acustico"
-    ],
-    "videoId": "hQ1R0er__7k"
   }
 ],
 "videoclips": [
@@ -329,15 +320,6 @@
     "videoId": "JEcrwRCCDG8"
   },
   {
-    "videoTitle": "Sílvia Tomàs i Guillem Boada - Todo homem [Caetano Veloso]",
-    "published_date": "2018-12-04",
-    "tags": [
-      "videos",
-      "videoclip"
-    ],
-    "videoId": "ztJoFUYt_8Y"
-  },
-  {
     "videoTitle": "Opoloh - Te cielo",
     "published_date": "2019-03-20",
     "tags": [
@@ -383,6 +365,15 @@
     "videoId": "171w1KPIuH0"
   },
   {
+    "videoTitle": "SISU - Cop d'estat global",
+    "published_date": "2020-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "Pz2NnXGsNFA"
+  },
+  {
     "videoTitle": "POWER GIRL - Dulce Laia",
     "published_date": "2022-01-05",
     "tags": [
@@ -401,13 +392,13 @@
     "videoId": "8-0YvdQDbwQ"
   },
   {
-    "videoTitle": "SISU - Cop d'estat global",
-    "published_date": "2020-12-04",
+    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas",
+    "published_date": "2022-04-07",
     "tags": [
       "videos",
       "videoclip"
     ],
-    "videoId": "Pz2NnXGsNFA"
+    "videoId": "hQ1R0er__7k"
   }
 ],
 "documentales": [
@@ -460,6 +451,14 @@
       "acustico"
     ],
     "videoId": "XjqsTgwXLhE"
+  },{
+    "videoTitle": "Sílvia Tomàs i Guillem Boada - Todo homem [Caetano Veloso]",
+    "published_date": "2018-12-04",
+    "tags": [
+      "videos",
+      "videoclip"
+    ],
+    "videoId": "ztJoFUYt_8Y"
   },
   {
     "videoTitle": "Sílvia Tomàs - Ejecución pública [Chicho Sánchez Ferlosio]",
@@ -480,13 +479,13 @@
     "videoId": "pO9jOq6MLuA"
   },
   {
-    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas",
-    "published_date": "2022-04-07",
+    "videoTitle": "Sílvia Tomàs Trio - Techo de paja [Tonolec]",
+    "published_date": "2020-03-13",
     "tags": [
       "videos",
       "acustico"
     ],
-    "videoId": "hQ1R0er__7k"
+    "videoId": "HaKbTSEsRuk"
   }
 ]
 }
