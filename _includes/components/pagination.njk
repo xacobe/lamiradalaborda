@@ -1,5 +1,5 @@
 {# Pagination #}
-{% if pagination.next %}
+{% if pagination.href.next or pagination.href.previous %}
     <nav aria-labelledby="paginador" class="position-relative pb-3 d-flex justify-content-center">
       <h2 id="my-pagination" class="visually-hidden">Paginación</h2>
       <ol class="pagination">
