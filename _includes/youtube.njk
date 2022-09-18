@@ -3,7 +3,7 @@
 {# <script src="/javascript/lite-yt-embed.js"></script> #}
 <!-- Web component for lite-youtube-embed -->
 <!-- Web component for lite-youtube-embed -->
-<lite-youtube videoid="{{ item.videoId }}" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %} autoload>
+<lite-youtube videoid="{{ item.videoId }}" class="pb-0" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %}>
   <button type="button" class="lty-playbtn">
     <span class="lyt-visually-hidden">Play Video: {{ item.videoTitle }}</span>
   </button>
