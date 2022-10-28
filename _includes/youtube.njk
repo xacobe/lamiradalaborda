@@ -11,7 +11,7 @@
     {{ item.videoDescription }}
   </div>
 </div> #}
-<lite-youtube videoid="{{ item.videoId }}" class="pb-0 mt-2" data-aos="fade-up" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %}>
+<lite-youtube videoid="{{ item.videoId }}" class="pb-0 mt-2" data-aos="zoom-out-up" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %}>
   <button type="button" class="lty-playbtn">
     <span class="lyt-visually-hidden">Play Video: {{ item.videoTitle }}</span>
   </button>
