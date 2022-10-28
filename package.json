@@ -30,6 +30,7 @@
     "markdown-it-anchor": "^5.2.5"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "eleventy-plugin-embed-everything": "^1.14.0"
   }
 }
