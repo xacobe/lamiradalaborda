@@ -23,13 +23,13 @@
     h6 {
       font-family: "Montserrat", sans-serif;
     }
-    .w3-row-padding img {
+    .row-padding img {
       margin-bottom: 12px;
     }
     /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
+    .sidebar {
       width: 120px;
-      background: #000;
+      background: #001219;
     }
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
     #main {
@@ -40,12 +40,12 @@
 
     {% endraw %}
   </style>
-  <body class="bg-black" data-bs-spy="scroll" data-bs-target="#myNavbar">
+  <body data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <nav class="w3-top d-block w3-top d-block bg-black semitransparente text-white p-2" id="myNavbar">
+    <nav class="top d-block top bg-black semitransparente fixed-top p-2" id="myNavbar">
       <div class="d-flex justify-content-center text-uppercase">
         {%- for entry in collections.all | eleventyNavigation %}
-          <a href="{{ entry.url | url }}" class="w3-bar-item w3-button">{{ entry.title}}</a>
+          <a href="{{ entry.url | url }}" class="bar-item button">{{ entry.title}}</a>
         {%- endfor %}
       </div>
     </nav>
@@ -54,7 +54,7 @@
     <main class="main-wrapper">
       {{ content | safe }}
     </main>
-    <footer class="footer pt-4 mt-5">
+    <footer class="footer pt-4">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
       {%- for entry in collections.all | eleventyNavigation %}
       <li class="nav-item">
