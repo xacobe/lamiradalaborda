@@ -11,18 +11,18 @@ pagination:
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Video y fotografía</p>
-  <div class="wrapper-banner-image content-section">
+  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Vídeo y fotografía</p>
+  <div class="wrapper-banner-image ">
     <img src="/img/banner-video.jpg" class="banner-image banner-image--small">
   </div>
 </header>
 {# Grid for photos  #}
-<div class="bg-black">
+<div class="bg-white">
   <div class="container-xl pt-5">
-    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Videoclips</h2>
+    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Vídeoclips</h2>
     {% include "components/video-nav.njk" %}
     <section>
-    {# Video grid #}
+    {# Vídeo grid #}
     {% include "components/video-grid.njk" %}
     {# Pagination #}
     {% include "components/pagination.njk" %}
