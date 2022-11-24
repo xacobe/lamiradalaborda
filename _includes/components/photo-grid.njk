@@ -1,0 +1,9 @@
+
+{# Vídeo grid #}
+<div class="video-grid pb-3 row" data-masonry='{"percentPosition": true }'>
+  {%- for item in pagination.items %}
+    <div class="col-sm-6 col-lg-4 mb-4">
+      {% include 'photo.njk' %}
+    </div>
+  {% endfor -%}
+</div>

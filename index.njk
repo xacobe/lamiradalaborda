@@ -104,8 +104,8 @@ pagination:
   </section>
 
   {# Portfolio Section #}
-  <section id="videos" class="container-xxl  p-2 p-lg-5 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
-    <h2 class="ps-2 ps-md-4 ps-lg-1">Mis vídeos</h2>
+  <section id="videos" class="container-xxl p-2 p-lg-5 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
+    <h2 class="ps-2 ps-md-4 ps-lg-1">Vídeos</h2>
     <hr style="width:200px" class="opacity ms-2 ms-md-4 ms-lg-1">
 
     {# Grid videos #}
@@ -125,11 +125,11 @@ pagination:
                 <p class="mb-0">Todos los vídeos de todas las categorías</p>
               </div>
             </div>
-          </div>
-          <button class="btn-primary w-100" onclick="window.open('/videos-todos', '_self')">
-            <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-todos', '_self')">
+              <i class="fa fa-regular fa-play pe-2"></i>
       Ver todos
     </button>
+          </div>
         </div>
       </div>
       <div class="col-lg-6 mb-4">
@@ -213,8 +213,8 @@ pagination:
                 <p class="mb-0">Una versión reducida de un videoclip, para acompañar la música de contenido visual</p>
               </div>
             </div>
-          <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-acusticos', '_self')">
-            <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-acusticos', '_self')">
+              <i class="fa fa-regular fa-play pe-2"></i>
       Ver acústicos
     </button>
           </div>
@@ -222,6 +222,28 @@ pagination:
       </div>
     </div>
     {# End Portfolio Section #}
+  </section>
+
+  <section id="photos" class="container-xxl p-2 p-lg-5 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
+    <h2 class="ps-2 ps-md-4 ps-lg-1">Fotografías</h2>
+    <hr style="width:200px" class="opacity ms-2 ms-md-4 ms-lg-1">
+
+    {# Grid photos #}
+      <h3 class="ps-2 ps-md-4 ps-lg-1">Reflejos</h3>
+      <p>En la colección reflejos se muestra -texto de introducción-.</p>
+    <div class="container">
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_8176.jpg" class="img-fluid"></div>
+        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_4779.jpg" class="img-fluid"></div>
+        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/el-visualizador.jpg" class="img-fluid"></div>
+        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/catedral.jpg" class="img-fluid"></div>
+      </div>
+    </div>
+    <button onclick="window.open('/fotos', '_self')" class="btn-primary mx-auto">
+      <i class="fa fa-regular fa-play pe-2"></i>
+      Ver fotografías
+    </button>
+    {# End Photos section #}
   </section>
 
   {# Contacto Section #}
