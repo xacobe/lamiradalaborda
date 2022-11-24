@@ -235,18 +235,18 @@ footer .border-bottom {
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+  text-decoration: none;
 }
-
+.btn-secondary[aria-current="page"] {
+  color: #fff !important;
+  background-color: #9B2226;
+  border: solid #9B2226 2px;
+}
 .btn-secondary:hover {
   color: #fff !important;
   border: solid #9B2226 2px;
   background-color: #9B2226;
   transition: all 250ms;
-}
-.btn-outline-success[aria-current="page"] {
-  color: var(--bs-btn-active-color);
-  background-color: var(--bs-btn-active-bg);
-  border-color: var(--bs-btn-active-border-color);
 }
 .text-muted {
   color: #a8a8a8 !important;
