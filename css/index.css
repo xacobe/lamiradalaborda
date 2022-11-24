@@ -30,6 +30,8 @@ a:hover {
 .header {
   height: 100vh;
   scroll-margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 .header.header--small {
   display: flex;
@@ -247,6 +249,17 @@ footer .border-bottom {
   border: solid #9B2226 2px;
   background-color: #9B2226;
   transition: all 250ms;
+}
+.btn-down {
+  align-self: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.2) !important;
+  flex: 0 0 auto;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
 }
 .text-muted {
   color: #a8a8a8 !important;
