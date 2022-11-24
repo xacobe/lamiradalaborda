@@ -92,7 +92,7 @@ a:hover {
   z-index: -1;
   height: 100vh;
   object-fit: cover;
-  object-position: top;
+  object-position: center left;
   position: relative;
 }
 text.titulo {
