@@ -42,10 +42,10 @@
   </style>
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <nav class="top d-block top bg-black semitransparente fixed-top p-2" id="myNavbar">
+    <nav id="myNavbar" class="top d-block top bg-black semitransparente sticky-top">
       <div class="d-flex justify-content-center text-uppercase">
         {%- for entry in collections.all | eleventyNavigation %}
-          <a href="{{ entry.url | url }}" class="bar-item button">{{ entry.title}}</a>
+          <a href="{{ entry.url | url }}" class="bar-item p-2 p-md-3 ">{{ entry.title}}</a>
         {%- endfor %}
       </div>
     </nav>

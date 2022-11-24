@@ -54,6 +54,7 @@ a:hover {
   height: inherit;
 }
 .bar-item {
+  font-size: 1rem;
   padding: 1rem;
   color: white;
   text-decoration: none;
@@ -81,7 +82,6 @@ a:hover {
 }
 .wrapper-banner-image {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100vw;
   z-index: -1;
@@ -178,7 +178,6 @@ main {
   position: relative;
 }
 .main-wrapper {
-  padding-top: 58px;
 }
 #contact {
   height: 80vh;
@@ -206,8 +205,9 @@ footer .border-bottom {
 .bg-beige {
   background-color: #E9D8A6;
 }
-.bg-redish {
-  background-color: #94D2BD;
+.bg-redish, .bg-redish a, .bg-redish h2 {
+  background-color: #005F73;
+  color: #fff !important;
 }
 /* Override Bootstrap */
 .card {
@@ -217,11 +217,14 @@ footer .border-bottom {
 .btn-primary {
   display: block;
       background-color: #AE2012;
-      padding: 2rem;
+      padding: .2rem;
       color: white;
-      font-size: 1.5rem;
+      font-size: 1rem;
       text-transform: uppercase;
       border: none;
+      font-weight: bold;
+      padding-left: 1rem;
+      padding-right: 1rem;
 }
 .btn-primary:hover {
   background-color: #9B2226;
@@ -238,6 +241,8 @@ footer .border-bottom {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .btn-secondary[aria-current="page"] {
   color: #fff !important;

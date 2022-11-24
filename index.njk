@@ -22,8 +22,14 @@ pagination:
       <i class="fa fa-arrow-down"></i>
       <span class="visually-hidden-focusable">Ver más</span>
     </a>
-  <div class="wrapper-banner-image ">
-    <img src="/img/portada.jpg" class="banner-image">
+   <div class="wrapper-banner-image">
+    <picture>
+  <source media="(max-width: 799px)" srcset="/img/portada-480w.jpg" />
+  <source media="(min-width: 800px)" srcset="/img/portada-800w.jpg" />
+  <img class="banner-image" src="/img/portada-800w.jpg" alt="Una mano de un bebé agarrando una llave de hierro antigua" />
+</picture>
+
+
   </div>
 </header>
 {# Sobre mi Section #}
@@ -63,7 +69,7 @@ pagination:
             Exposiciones
       </div>
     </div>
-    <button class="btn-primary mx-auto" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
+    <button class="btn-secondary mx-auto px-3" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i>
       Descargar curriculum
     </button>
@@ -114,28 +120,6 @@ pagination:
 
     {# Grid videos #}
     <div class="row">
-      <div class="col-12 offset-0 col-lg-6 offset-lg-3 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <img
-            src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-            alt=""
-            style="width: 190px; height: 145px"
-            class="xxx"
-/>
-              <div class="ms-3 align-self-start">
-                <p class="fw-bold mb-1 fs-5 text-uppercase">Todas las categorías</p>
-                <p class="mb-0">Todos los vídeos de todas las categorías</p>
-              </div>
-            </div>
-            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-todos', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
-      Ver todos
-    </button>
-          </div>
-        </div>
-      </div>
       <div class="col-lg-6 mb-4">
         <div class="card">
           <div class="card-body">
@@ -151,7 +135,7 @@ pagination:
                 <p class="mb-0">Videoclips musicales para bandas y cantautores.</p>
               </div>
             </div>
-            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-videoclips', '_self')">
+            <button class="btn-primary ms-auto" onclick="window.open('/videos-videoclips', '_self')">
               <i class="fa fa-regular fa-play pe-2"></i>
       Ver videoclips
     </button>
@@ -173,7 +157,7 @@ pagination:
                 <p class="mb-0">Una pequeña muestra de los documentales creados para diversos fines</p>
               </div>
             </div>
-            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-documentales', '_self')">
+            <button class="btn-primary ms-auto" onclick="window.open('/videos-documentales', '_self')">
               <i class="fa fa-regular fa-play pe-2"></i>
       Ver documentales
     </button>
@@ -195,7 +179,7 @@ pagination:
                 <p class="mb-0">Vídeos publicitarios y comerciales para vender y dar a conocerse ya sea en televisión o redes sociales.</p>
               </div>
             </div>
-            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-publicidad', '_self')">
+            <button class="btn-primary ms-auto" onclick="window.open('/videos-publicidad', '_self')">
               <i class="fa fa-regular fa-play pe-2"></i>
       Ver publicidad
     </button>
@@ -217,7 +201,7 @@ pagination:
                 <p class="mb-0">Una versión reducida de un videoclip, para acompañar la música de contenido visual</p>
               </div>
             </div>
-            <button class="btn-secondary ms-auto px-3" onclick="window.open('/videos-acusticos', '_self')">
+            <button class="btn-primary ms-auto" onclick="window.open('/videos-acusticos', '_self')">
               <i class="fa fa-regular fa-play pe-2"></i>
       Ver acústicos
     </button>
@@ -235,14 +219,14 @@ pagination:
     {# Grid photos #}
       <h3 class="ps-2 ps-md-4 ps-lg-1">Reflejos</h3>
       <p class="ps-2 ps-md-4 ps-lg-1">Fotos de la exposición "Reflejos"</p>
-    <div class="container">
+
       <div class="row" data-masonry='{"percentPosition": true }'>
         <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_8176.jpg" loading="lazy" class="img-fluid"></div>
         <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_4779.jpg" loading="lazy" class="img-fluid"></div>
         <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/el-visualizador.jpg" loading="lazy" class="img-fluid"></div>
         <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/catedral.jpg" loading="lazy" class="img-fluid"></div>
       </div>
-    </div>
+
     <button onclick="window.open('/fotos', '_self')" class="btn-primary mx-auto">
       <i class="fa fa-regular fa-play pe-2"></i>
       Ver fotografías

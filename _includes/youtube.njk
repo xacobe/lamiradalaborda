@@ -1,6 +1,5 @@
 <!-- src/_includes/youtube.njk -->
 <!-- Web component for lite-youtube-embed -->
-<h3 class="video-title">{{ item.videoTitle }}</h3>
 {# <a class="mas-info float-end text-white text-decoration-none" data-bs-toggle="collapse" href="#mas-info-{{ item.videoId }}" role="button" aria-expanded="false" aria-controls="collapseExample">
   + info
 </a>
@@ -14,4 +13,5 @@
     <span class="lyt-visually-hidden">Play Vídeo: {{ item.videoTitle }}</span>
   </button>
 </lite-youtube>
-<date class="fecha fw-bold text-black">{{ item.published_date }}</date>
+<h3 class="video-title">{{ item.videoTitle }}</h3>
+<date class="fecha d-inline-block fw-bold text-black">{{ item.published_date }}</date>
