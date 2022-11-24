@@ -47,9 +47,6 @@ a:hover {
   text-shadow: black 1px 11px 11px;
   width: 100%;
 }
-.header.header--small .page-title p {
-  margin: 0 auto;
-}
 .header.header--small .banner-image {
   height: inherit;
 }
@@ -75,10 +72,15 @@ a:hover {
   margin: 0;
   width: min-content;
 }
+.header.header--small .page-title p {
+  width: 100%;
+  font-size: 5rem;
+}
 .page-subtitle {
   background-color: rgba(255, 255, 255, 0.3);
-  width: fit-content;
-  padding: 1rem;
+}
+.header.header--small .page-subtitle {
+
 }
 .wrapper-banner-image {
   position: absolute;
@@ -167,20 +169,15 @@ span.w3-hide-small {
   position: relative;
 }
 .fecha {
-	margin-top: 0.5rem;
-	color: #bfbdbd !important;
-	font-size: 1.5rem;
-	display: block;
-	text-align: right;
+	color: #A7A8B6 !important;
+	font-size: 1rem;
+  padding-top: .2rem;
 }
 main {
   z-index: 0;
   position: relative;
 }
 .main-wrapper {
-}
-#contact {
-  height: 80vh;
 }
 .footer {
   background: #1a1919;
@@ -294,7 +291,10 @@ footer .border-bottom {
 .fs-3 {
   font-size: calc(1.3rem + 0.6vw) !important;
 }
-
+.border-orange {
+  border-color: orange !important;
+  border-width: 2px !important;
+}
 /* Carousel */
 .carousel-control-next,
 .carousel-control-prev {
@@ -483,4 +483,9 @@ lite-youtube.lyt-activated > .lty-playbtn {
   font-style: italic;
   color: rgba(155, 155, 125, .3);
   z-index: 0;
+}
+.video-title {
+  padding-top: .5rem;
+  padding-left: .5rem;
+  font-size: 1.2rem;
 }

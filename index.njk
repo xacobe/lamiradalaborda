@@ -11,13 +11,13 @@ pagination:
 ---
 {# Inicio #}
 <header id="inicio" class="header text-uppercase justify-content-around">
-  <h1 class="col-12 pt-3 page-title fs-1">
+  <h1 class="col-12 pt-3 page-title fs-1 py-4">
     <p class=" mx-auto ms-md-5">{{ metadata.title }}</p>
   </h1>
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Vídeo y fotografía</p>
+  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3 px-5">Vídeo y fotografía</p>
   <a class="btn-down" href="#about">
       <i class="fa fa-arrow-down"></i>
       <span class="visually-hidden-focusable">Ver más</span>
@@ -208,6 +208,10 @@ pagination:
           </div>
         </div>
       </div>
+      <button class="btn-secondary mx-auto w-auto mt-4" onclick="window.open('/videos-publicidad', '_self')">
+              <i class="fa fa-regular fa-play pe-2"></i>
+      Ver todos
+    </button>
     </div>
     {# End Portfolio Section #}
   </section>
@@ -237,18 +241,20 @@ pagination:
   {# Contacto Section #}
   <section id="contact" class="bg-redish p-4 p-md-5">
     <div class="container-xxl">
-      <h2>Contacto</h2>
-      <hr class="opacity">
+      <h2 class="pb-3">Contacto</h2>
       <div class="row">
-        <div class="col-md-6 fs-3">
-          <span class="pe-5">
-            <i class="fa fa-map-marker fa-fw  "></i> Mediterráneo</span>
-          {# <span><i class="fa fa-phone fa-fw  "></i> Phone: +00 151515</span> #}
-          <span>
-            <i class="fa fa-envelope fa-fw  "></i> Email: <span>
-              <a href="mailto:epistolariodigital@yahoo.es" class="">epistolariodigital@yahoo.es</a>
-            </span>
-          </span>
+        <div class="col-md-6">
+          <p class="pe-5 text-center py-3 border-bottom border-light m-0 border-top">
+            <i class="fa fa-map-marker fa-fw d-block mx-auto fs-2 py-3"></i>
+            Mediterráneo
+          </p>
+          {# <p><i class="fa fa-phone fa-fw d-block mx-auto fs-2 py-3"></i> Phone: +00 151515</p> #}
+            <p class="pe-5 text-center py-3 border-bottom border-light m-0">
+              <i class="fa fa-envelope fa-fw d-block mx-auto fs-2 py-3">
+              </i>
+                Email:
+                <a href="mailto:epistolariodigital@yahoo.es" class="">epistolariodigital@yahoo.es</a>
+            </p>
         </div>
         <div class="col-md-6">
           <img class="img-fluid" src="/img/eduardo-fotos.jpeg" />
