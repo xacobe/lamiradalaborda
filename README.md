@@ -72,3 +72,5 @@ DEBUG=* npx eleventy
 * `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `home.njk` has an example of how to use it.
 
 * The latest 6 blog posts with the "photo" tag wil be used in the photo gallery.
+
+* Palette of colours used: https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226
