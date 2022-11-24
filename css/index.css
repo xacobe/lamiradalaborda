@@ -17,6 +17,10 @@ h6 {
   --bs-heading-color: #001219;
   color: var(--bs-heading-color);
 }
+a {
+  --bs-link-color: ¢001219;
+
+}
 .header {
   height: 100vh;
   scroll-margin-top: 4rem;
@@ -195,6 +199,10 @@ footer .border-bottom {
   background-color: #94D2BD;
 }
 /* Override Bootstrap */
+.card {
+  --bs-card-border-radius: 0;
+  --bs-card-border-color: #001219;
+}
 .btn-primary {
   display: block;
       background-color: #AE2012;
@@ -212,18 +220,19 @@ footer .border-bottom {
   display: block;
   background-color: #fff;
   color: #9B2226 !important;
-  border: solid #9B2226 .2rem;
-  padding: 2rem;
+  border: solid 2px #AE2012;
+  padding: .2rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
 .btn-secondary:hover {
   color: #fff !important;
-  border: solid #9B2226 .2rem;
+  border: solid #9B2226 2px;
   background-color: #9B2226;
-  transition: background-color 250ms;
+  transition: all 250ms;
 }
 .btn-outline-success[aria-current="page"] {
   color: var(--bs-btn-active-color);
