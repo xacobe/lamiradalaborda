@@ -1,7 +1,6 @@
 <!-- src/_includes/youtube.njk -->
 <!-- Web component for lite-youtube-embed -->
-<h3 class="video-title border-white border-bottom pt-4 pt-lg-5">{{ item.videoTitle }}</h3>
-<date class="fecha fw-bold text-black">{{ item.published_date }}</date>
+<h3 class="video-title border-white border-bottom py-4 pt-lg-5">{{ item.videoTitle }}</h3>
 {# <a class="mas-info float-end text-white text-decoration-none" data-bs-toggle="collapse" href="#mas-info-{{ item.videoId }}" role="button" aria-expanded="false" aria-controls="collapseExample">
   + info
 </a>
@@ -12,6 +11,7 @@
 </div> #}
 <lite-youtube videoid="{{ item.videoId }}" class="pb-0 mt-2" data-aos="zoom-out-up" style="background-image: url('https://i.ytimg.com/vi/{{ item.videoId }}/hqdefault.jpg');" {% if item.params %} params="{{ videoList.params }}"{% endif %}>
   <button type="button" class="lty-playbtn">
-    <span class="lyt-visually-hidden">Play Video: {{ item.videoTitle }}</span>
+    <span class="lyt-visually-hidden">Play Vídeo: {{ item.videoTitle }}</span>
   </button>
 </lite-youtube>
+<date class="fecha fw-bold text-black">{{ item.published_date }}</date>

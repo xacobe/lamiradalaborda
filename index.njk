@@ -17,17 +17,25 @@ pagination:
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Video y fotografía</p>
-  <div class="wrapper-banner-image content-section">
+  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3">Vídeo y fotografía</p>
+  {# <button onclick="window.open('files/eduardo-laborda-cv.pdf')" class="btn-primary d-inline-block ms-md-5 p-3">
+      <i class="fa fa-download"></i>
+      Ver más
+    </button>
+    <button onclick="window.open('files/eduardo-laborda-cv.pdf')" class="btn-secondary d-inline-block ms-md-5 p-3">
+      <i class="fa fa-download"></i>
+      Ver vídeos
+    </button> #}
+  <div class="wrapper-banner-image ">
     <img src="/img/portada.jpg" class="banner-image">
   </div>
 </header>
 {# Sobre mi Section #}
-<section id="about" class="content-section w3-content w3-justify w3-text-grey">
-  <div class="semioscuro p-4 p-md-5" data-aos="fade-right" data-aos-duration="1000">
+<section id="about" class=" justify ">
+  <div class="p-4 p-md-5 container-xxl" data-aos="fade-right" data-aos-duration="1000">
 
-    <h2 class="w3-text-light-grey">La mirada Laborda</h2>
-    <hr style="width:200px" class="w3-opacity">
+    <h2>La mirada Laborda</h2>
+    <hr style="width:200px" class="opacity">
     <p>“La Mirada Laborda” es un reflejo de mi trabajo, una pequeña selección de mis
             obras más representativas. Después de dos décadas dedicado a la fotografía y al
             vídeo, sigo fascinado con el cultivo de un lenguaje propio con el que poder
@@ -41,7 +49,7 @@ pagination:
             <br>
             Eduardo Laborda Martínez.
         </p>
-    <div class="row semioscuro text-center">
+    <div class="row text-center mb-5">
       <div class="col p-3">
         <span class="w3-xlarge">11+</span><br>
             Colaboraciones
@@ -59,45 +67,49 @@ pagination:
             Exposiciones
       </div>
     </div>
-    <button class="w3-button w3-button-primary" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
+    <button class="btn-primary mx-auto" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i>
       Descargar resumen
     </button>
   </div>
   {# Testimonials #}
-  <div class="w3-content w3-justify w3-text-grey semioscuro text-white p-4 p-md-5 mt-1 pb-5" data-aos="fade-left" data-aos-duration="1000">
-    <h3 class="w3-text-light-grey">Mi reputación</h3>
-    <div class="row">
-      <section class="testimonial-slider">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          </div>
-          <div class="carousel-inner text-center">
-            <div class="carousel-item active">
-              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
-              <figure class="text-cent mt-4">
-                <blockquote class="blockquote">
-                  <p class="height-testimonial">"Poesia visual. Así resumiria su talento con la cámara y su capacidad para plasmar en vídeos y fotos cada emoción y percepción. Un placer trabajar con alguien amable y atento, comprometido con una visión propia e integradora."</p>
-                </blockquote>
-                <figcaption class="blockquote-footer mt-2">Sílvia Tomàs</figcaption>
-              </figure>
+  <div class="bg-beige">
+    <div class=" justify  container-xxl p-4 p-md-5 mt-1 pb-5" data-aos="fade-left" data-aos-duration="1000">
+      <h3>Mi reputación</h3>
+      <div class="row">
+        <section class="testimonial-slider">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            <div class="carousel-item">
-              <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
-              <figure class="mt-4">
-                <blockquote class="blockquote">
-                  <p class="height-testimonial">"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distinta.</p>
-                </blockquote>
-                <figcaption class="blockquote-footer mt-2">Javier Rocas</figcaption>
-              </figure>
+            <div class="carousel-inner text-center">
+              <div class="carousel-item active">
+                <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+                <figure class="text-cent mt-4">
+                  <blockquote class="blockquote">
+                    <p class="height-testimonial">"Poesia visual. Así resumiria su talento con la cámara y su capacidad para plasmar en vídeos y fotos cada emoción y percepción. Un placer trabajar con alguien amable y atento, comprometido con una visión propia e integradora."</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">Sílvia Tomàs</figcaption>
+                </figure>
+              </div>
+              <div class="carousel-item">
+                <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+                <figure class="mt-4">
+                  <blockquote class="blockquote">
+                    <p class="height-testimonial">"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distinta.</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer mt-2">Javier Rocas</figcaption>
+                </figure>
+              </div>
+              <div class="carousel-fake"></div>
             </div>
-            <div class="carousel-fake">
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
+    {# End Sobre mi Section #}
+  </section>
 
   </div>
   {# End Sobre mi Section #}
@@ -122,23 +134,24 @@ pagination:
   </div>
 </section>
 
-{# Contacto Section #}
-<section id="contact" class="content-section semioscuro p-4 p-md-5 text-white w3-content w3-text-grey mb-2" data-aos="fade-left" data-aos-duration="1000">
-  <h2 class="w3-text-light-grey">Contacto</h2>
-  <hr style="width:200px" class="w3-opacity">
+  {# Contacto Section #}
+  <section id="contact" class="bg-redish  p-4 p-md-5 " data-aos="fade-left" data-aos-duration="1000">
+    <div class="container-xxl">
+      <h2>Contacto</h2>
+      <hr style="width:200px" class="opacity">
+      <div class="row">
+        <div class="col-md-6">
+          <p>
+            <i class="fa fa-map-marker fa-fw  xxlarge "></i> Barcelona</p>
+          {# <p><i class="fa fa-phone fa-fw  xxlarge "></i> Phone: +00 151515</p> #}
+          <p>
+            <i class="fa fa-envelope fa-fw  xxlarge "></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="">epistolariodigital@yahoo.es</a>
+          </p>
+        </div>
+        <div class="col-md-6"></div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <p>
-        <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Barcelona</p>
-      {# <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p> #}
-      <p>
-        <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:epistolariodigital@yahoo.es" class="text-white">epistolariodigital@yahoo.es</a>
-      </p>
+      </div>
     </div>
-    <div class="col-md-6">
-    </div>
-  </div>
 
-  {# End Contacto Section #}
-</section>
+    {# End Contacto Section #}
+  </section>
