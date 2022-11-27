@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
 eleventyNavigation:
+  icono: bi-house
   key: Inicio
   order: 1
   url: /#inicio
@@ -11,29 +12,28 @@ pagination:
 ---
 {# Inicio #}
 <header id="inicio" class="header text-uppercase justify-content-around">
-  <h1 class="col-12 pt-3 page-title fs-1 py-4">
-    <p class=" mx-auto ms-md-5">{{ metadata.title }}</p>
+  <h1 class="py-4 pt-3 col-12 page-title">
+    <p class="mx-auto ms-md-5 pt-md-5">{{ metadata.title }}</p>
   </h1>
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-  <p class="page-subtitle fs-2 mx-auto ms-md-5 p-3 px-5">Vídeo y fotografía</p>
-  <a class="btn-down" href="#about">
-      <i class="fa fa-arrow-down"></i>
-      <span class="visually-hidden-focusable">Ver más</span>
-    </a>
-   <div class="wrapper-banner-image">
+  <p class="p-3 px-5 mx-auto page-subtitle fs-2">Vídeo y fotografía</p>
+  <a class="btn-down fs-1 pb-5 mb-5" href="#about">
+    <i class="bi bi-arrow-down-circle-fill"></i>
+    <span class="visually-hidden-focusable">Ver más</span>
+  </a>
+  <div class="wrapper-banner-image">
     <picture>
-  <source media="(max-width: 799px)" srcset="/img/portada-480w.jpg" />
-  <source media="(min-width: 800px)" srcset="/img/portada-800w.jpg" />
-  <img class="banner-image" src="/img/portada-800w.jpg" alt="Una mano de un bebé agarrando una llave de hierro antigua" />
-</picture>
-
+      <source media="(max-width: 799px)" srcset="/img/portada-480w.jpg"/>
+      <source media="(min-width: 800px)" srcset="/img/portada-800w.jpg"/>
+      <img class="banner-image" src="/img/portada-800w.jpg" alt="Una mano de un bebé agarrando una llave de hierro antigua"/>
+    </picture>
 
   </div>
 </header>
 {# Sobre mi Section #}
-<section id="about" class=" justify ">
+<section id="about" class=" justify">
   <div class="p-4 p-md-5 container-xxl" data-aos="fade-right" data-aos-duration="1000">
 
     <h2>La mirada Laborda</h2>
@@ -51,32 +51,40 @@ pagination:
             <br>
             Eduardo Laborda Martínez.
         </p>
-    <div class="card-group text-center mb-5">
-      <div class="card p-5">
-        <span class="fs-2 pb-3">11+</span><br>
-            Colaboraciones
+    <div class="py-3 text-center row row-cols-2 row-cols-sm-4">
+      <div class="col mb-2">
+        <div class="p-3 card h-100 justify-content-center py-md-5">
+          <span class="pb-3 fs-2">11+</span><br>
+              Colaboraciones
+        </div>
       </div>
-      <div class="card p-5">
-        <span class="fs-2 pb-3">55+</span><br>
-            Proyectos hechos
+      <div class="col mb-2">
+        <div class="p-3 card h-100 justify-content-center py-md-5">
+          <span class="pb-3 fs-2">55+</span><br>
+              Proyectos hechos
+        </div>
       </div>
-      <div class="card p-5">
-        <span class="fs-2 pb-3">89+</span><br>
-            Clientes felices
+      <div class="col mb-2">
+        <div class="p-3 card h-100 justify-content-center py-md-5">
+          <span class="pb-3 fs-2">89+</span><br>
+              Clientes felices
+        </div>
       </div>
-      <div class="card p-5">
-        <span class="fs-2 pb-3">12+</span><br>
-            Exposiciones
+      <div class="col mb-2">
+        <div class="p-3 card h-100 justify-content-center py-md-5">
+          <span class="pb-3 fs-2">12+</span><br>
+              Exposiciones
+        </div>
       </div>
     </div>
-    <button class="btn-secondary mx-auto px-3" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
+    <button class="mx-auto btn-secondary btn-lg" onclick="window.open('{{ 'files/eduardo-laborda-cv.pdf' | url}}')">
       <i class="fa fa-download"></i>
       Descargar curriculum
     </button>
   </div>
   {# Testimonials #}
   <div class="bg-beige">
-    <div class=" justify  container-xxl p-4 p-md-5 mt-1 pb-5" data-aos="fade-left" data-aos-duration="1000">
+    <div class="p-4 pb-5 mt-1 justify container-xxl p-md-5" data-aos="fade-left" data-aos-duration="1000">
       <h3>Mi reputación</h3>
       <div class="row">
         <section class="testimonial-slider">
@@ -85,23 +93,23 @@ pagination:
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
-            <div class="carousel-inner text-center">
+            <div class="text-center carousel-inner">
               <div class="carousel-item active">
-                <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
-                <figure class="text-cent mt-4">
+                <i class="bi bi-chat-right-quote fs-2 text-danger"></i>
+                <figure class="mt-4 text-cent">
                   <blockquote class="blockquote">
                     <p class="height-testimonial">"Poesia visual. Así resumiria su talento con la cámara y su capacidad para plasmar en vídeos y fotos cada emoción y percepción. Un placer trabajar con alguien amable y atento, comprometido con una visión propia e integradora."</p>
                   </blockquote>
-                  <figcaption class="blockquote-footer mt-2">Sílvia Tomàs</figcaption>
+                  <figcaption class="mt-2 blockquote-footer">Sílvia Tomàs</figcaption>
                 </figure>
               </div>
               <div class="carousel-item">
-                <i class="bi bi-chat-right-quote fs-1 text-danger"></i>
+                <i class="bi bi-chat-right-quote fs-2 text-danger"></i>
                 <figure class="mt-4">
                   <blockquote class="blockquote">
                     <p class="height-testimonial">"Las fotos quedaron estupendas, un resultado impactante, sorprendente. Realmente ve el mundo desde una óptica distinta.</p>
                   </blockquote>
-                  <figcaption class="blockquote-footer mt-2">Javier Rocas</figcaption>
+                  <figcaption class="mt-2 blockquote-footer">Javier Rocas</figcaption>
                 </figure>
               </div>
               <div class="carousel-fake"></div>
@@ -114,150 +122,156 @@ pagination:
   </section>
 
   {# Portfolio Section #}
-  <section id="videos" class="container-xxl p-2 p-lg-5 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
-    <h2 class="ps-2 ps-md-4 ps-lg-1">Vídeos</h2>
-    <hr style="width:200px" class="opacity ms-2 ms-md-4 ms-lg-1">
+  <section id="videos" class="p-2 py-4 overflow-hidden container-xxl px-lg-5" data-aos="fade-right" data-aos-duration="1000">
+    <h2 class="mb-2 fw-bold fs-5 text-uppercase ff-quicksand">Vídeos</h2>
+    <hr style="width:200px" class="opacity">
 
     {# Grid videos #}
     <div class="row">
-      <div class="col-lg-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <img
-            src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-            alt=""
-            style="width: 190px; height: 145px"
-            class="xxx"
+      <div class="mb-2 mb-md-3 col-lg-6">
+        <div class="card flex-row">
+          <div class="col-4 col-md-4 d-none d-md-block ">
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+              alt=""
+              class="img-fluid"
 />
-              <div class="ms-3 align-self-start">
-                <p class="fw-bold mb-1 fs-5 text-uppercase">Videoclips</p>
+          </div>
+          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center pb-3">
+              <div class="align-self-start">
+                <p class="mb-2 fw-bold fs-5 ff-montserrat">Videoclips</p>
                 <p class="mb-0">Videoclips musicales para bandas y cantautores.</p>
               </div>
             </div>
-            <button class="btn-primary ms-auto" onclick="window.open('/videos-videoclips', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-primary ms-auto me-auto ms-md-auto me-md-0 btn-sm" onclick="window.open('/videos-videoclips', '_self')">
+              <i class="bi bi-play-fill"></i>
       Ver videoclips
     </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <img
-            src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-            alt=""
-            style="width: 190px; height: 145px"
-            class="xxx"
+      <div class="mb-2 mb-md-3 col-lg-6">
+        <div class="card flex-row">
+          <div class="col-4 col-md-4 d-none d-md-block ">
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+              alt=""
+              class="img-fluid"
 />
-              <div class="ms-3 align-self-start">
-                <p class="fw-bold mb-1 fs-5 text-uppercase">Documentales</p>
+          </div>
+          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center pb-3">
+              <div class="align-self-start">
+                <p class="mb-2 fw-bold fs-5 ff-montserrat">Documentales</p>
                 <p class="mb-0">Una pequeña muestra de los documentales creados para diversos fines</p>
               </div>
             </div>
-            <button class="btn-primary ms-auto" onclick="window.open('/videos-documentales', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-primary ms-auto me-auto ms-md-auto me-md-0 btn-sm" onclick="window.open('/videos-documentales', '_self')">
+              <i class="bi bi-play-fill"></i>
       Ver documentales
     </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <img
-            src="https://mdbootstrap.com/img/new/avatars/9.jpg"
-            alt=""
-            style="width: 190px; height: 145px"
-            class="xxx"
+      <div class="mb-2 mb-md-3 col-lg-6">
+        <div class="card flex-row">
+          <div class="col-4 col-md-4 d-none d-md-block ">
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/9.jpg"
+              alt=""
+              class="img-fluid"
 />
-              <div class="ms-3 align-self-start">
-                <p class="fw-bold mb-1 fs-5 text-uppercase">Publicidad</p>
+          </div>
+          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center pb-3">
+              <div class="align-self-start">
+                <p class="mb-2 fw-bold fs-5 ff-montserrat">Publicidad</p>
                 <p class="mb-0">Vídeos publicitarios y comerciales para vender y dar a conocerse ya sea en televisión o redes sociales.</p>
               </div>
             </div>
-            <button class="btn-primary ms-auto" onclick="window.open('/videos-publicidad', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-primary ms-auto me-auto ms-md-auto me-md-0 btn-sm" onclick="window.open('/videos-publicidad', '_self')">
+              <i class="bi bi-play-fill"></i>
       Ver publicidad
     </button>
           </div>
         </div>
       </div>
-      <div class="col-lg-6 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <div class="d-flex align-items-center">
-              <img
-            src="https://mdbootstrap.com/img/new/avatars/11.jpg"
-            alt=""
-            style="width: 190px; height: 145px"
-            class="xxx"
+      <div class="mb-2 mb-md-3 col-lg-6">
+        <div class="card flex-row">
+          <div class="col-4 col-md-4 d-none d-md-block ">
+            <img
+              src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+              alt=""
+              class="img-fluid"
 />
-              <div class="ms-3 align-self-start">
-                <p class="fw-bold mb-1 fs-5 text-uppercase">Acústicos</p>
+          </div>
+          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between">
+            <div class="d-flex align-items-center pb-3">
+              <div class="align-self-start">
+                <p class="mb-2 fw-bold fs-5 ff-montserrat">Acústicos</p>
                 <p class="mb-0">Una versión reducida de un videoclip, para acompañar la música de contenido visual</p>
               </div>
             </div>
-            <button class="btn-primary ms-auto" onclick="window.open('/videos-acusticos', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
+            <button class="btn-primary ms-auto me-auto ms-md-auto me-md-0 btn-sm" onclick="window.open('/videos-acusticos', '_self')">
+              <i class="bi bi-play-fill"></i>
       Ver acústicos
     </button>
           </div>
         </div>
       </div>
-      <button class="btn-secondary mx-auto w-auto mt-4" onclick="window.open('/videos-publicidad', '_self')">
-              <i class="fa fa-regular fa-play pe-2"></i>
+      <button class="w-auto mx-auto mt-4 btn-secondary btn-lg" onclick="window.open('/videos-todos', '_self')">
+        <i class="bi bi-play-fill"></i>
       Ver todos
     </button>
     </div>
     {# End Portfolio Section #}
   </section>
 
-  <section id="photos" class="container-xxl p-2 p-lg-5 py-4 overflow-hidden" data-aos="fade-right" data-aos-duration="1000">
-    <h2 class="ps-2 ps-md-4 ps-lg-1">Fotografías</h2>
-    <hr style="width:200px" class="opacity ms-2 ms-md-4 ms-lg-1">
+  <section id="photos" class="p-2 py-4 overflow-hidden container-xxl p-lg-5" data-aos="fade-right" data-aos-duration="1000">
+    <h2 class="mb-2 fw-bold fs-5 text-uppercase ff-quicksand">Fotografías</h2>
+    <hr style="width:200px" class="opacity">
 
     {# Grid photos #}
-      <h3 class="ps-2 ps-md-4 ps-lg-1">Reflejos</h3>
-      <p class="ps-2 ps-md-4 ps-lg-1">Fotos de la exposición "Reflejos"</p>
+    <h3 class="mb-2 fw-bold fs-5 text-uppercase ff-quicksand text-uppercase">Reflejos</h3>
+    <p class="mb-2 fw-bold fs-5 ff-montserrat m-0">Fotos de la exposición "Reflejos"</p>
 
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_8176.jpg" loading="lazy" class="img-fluid"></div>
-        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/IMG_4779.jpg" loading="lazy" class="img-fluid"></div>
-        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/el-visualizador.jpg" loading="lazy" class="img-fluid"></div>
-        <div class="col-sm-6 col-lg-4 mb-4"><img src="/img/photos/catedral.jpg" loading="lazy" class="img-fluid"></div>
-      </div>
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <div class="mb-4 col-sm-6 col-lg-4"><img src="/img/photos/IMG_8176.jpg" loading="lazy" class="img-fluid"></div>
+      <div class="mb-4 col-sm-6 col-lg-4"><img src="/img/photos/IMG_4779.jpg" loading="lazy" class="img-fluid"></div>
+      <div class="mb-4 col-sm-6 col-lg-4"><img src="/img/photos/el-visualizador.jpg" loading="lazy" class="img-fluid"></div>
+      <div class="mb-4 col-sm-6 col-lg-4"><img src="/img/photos/catedral.jpg" loading="lazy" class="img-fluid"></div>
+    </div>
 
-    <button onclick="window.open('/fotos', '_self')" class="btn-primary mx-auto">
-      <i class="fa fa-regular fa-play pe-2"></i>
+    <button onclick="window.open('/fotos', '_self')" class="opacity mx-auto btn-primary btn-lg">
+      <i class="bi bi-play-fill"></i>
       Ver fotografías
     </button>
     {# End Photos section #}
   </section>
 
   {# Contacto Section #}
-  <section id="contact" class="bg-redish p-4 p-md-5">
+  <section id="contact" class="p-4 bg-redish p-md-5">
     <div class="container-xxl">
-      <h2 class="pb-3">Contacto</h2>
+      <h2 class="">Contacto</h2>
       <div class="row">
         <div class="col-md-6">
-          <p class="pe-5 text-center py-3 border-bottom border-light m-0 border-top">
-            <i class="fa fa-map-marker fa-fw d-block mx-auto fs-2 py-3"></i>
-            Mediterráneo
-          </p>
-          {# <p><i class="fa fa-phone fa-fw d-block mx-auto fs-2 py-3"></i> Phone: +00 151515</p> #}
-            <p class="pe-5 text-center py-3 border-bottom border-light m-0">
-              <i class="fa fa-envelope fa-fw d-block mx-auto fs-2 py-3">
-              </i>
-                Email:
-                <a href="mailto:epistolariodigital@yahoo.es" class="">epistolariodigital@yahoo.es</a>
+          <div class="qqq border-bottom align-items-center border-light border-top d-flex">
+            <i class="bi bi-geo-alt-fill d-inline-block fs-2"></i>
+            <p class="py-3 m-0 ps-4">
+              Mediterráneo
             </p>
+          </div>
+          <div class="qqq border-bottom align-items-center border-light d-flex mb-3">
+            <i class="bi bi-envelope inline-block fs-2"></i>
+            <span class="py-3 m-0 ps-4">
+              Email:
+              <a href="mailto:epistolariodigital@yahoo.es" class="d-inline-block">epistolariodigital@yahoo.es</a>
+            </span>
+          </div>
         </div>
         <div class="col-md-6">
-          <img class="img-fluid" src="/img/eduardo-fotos.jpeg" />
+          <img class="img-fluid" src="/img/eduardo-fotos.jpeg"/>
         </div>
       </div>
     </div>

@@ -5,56 +5,62 @@ pagination:
     size: 30
     alias: fotos
 eleventyNavigation:
+  icono: bi-camera2
   key: Fotos
   order: 4
   url: /#photos
 ---
 {# Inicio #}
-<header id="inicio" class="header text-uppercase header--small pb-5">
-  <h1 class="col-12 pt-3 page-title fs-1">
-    <p class="mx-auto ms-md-5 mt-4">{{ metadata.title }}</p>
+<header id="inicio" class="header text-uppercase header--small">
+  <h1 class="pt-3 col-12 page-title">
+    <p class="text-center mt-2 ms-md-5">{{ metadata.title }}</p>
   </h1>
-  <p class="page-subtitle fs-4 mx-auto ms-md-5 p-2 px-4 my-5">Vídeo y fotografía</p>
+  <h2 class="px-3 py-1 mx-auto page-subtitle fs-4 ms-md-5 mb-4">Fotografía</h2>
   <div class="wrapper-banner-image ">
-    <img src="/img/banner-eduardo-fotografia.jpg" class="banner-image banner-image--small">
+    <picture>
+      <source media="(max-width: 768px)" srcset="/img/banner-fotos-768.jpg"/>
+      <source media="(min-width: 769px)" srcset="/img/banner-fotos-1920.jpg"/>
+      <img class="banner-image banner-image--small" src="/img/banner-fotos-1920.jpg" alt="Una autoretrato con cámara de fotos"/>
+    </picture>
   </div>
 </header>
 {# Grid for photos  #}
 <div class="bg-white">
-  <div class="container-xl pt-5">
-    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Fotografías</h2>
+  <div class="pt-2 container-fluid">
     <section>
-      <h3 class="">Reflejos</h3>
-      <p>
-         La labor del fotógrafo Eduardo Laborda Martínez es extensa e intensa, particularmente en México. Ha escrito, dirigido y fotografiado abundantes documentales y cortometrajes, ha trabajado de camarógrafo en diversos eventos, ha llevado a cabo numerosos encargos fotográficos para empresas e instituciones, ha realizado dos docenas de estudios fotográficos de artistas, ha expuesto su obra varias veces y ha publicado fotografías en diversos medios, además de conseguir nominaciones y premios en concursos y convocatorias. Quizá la vertiente más personal de su trabajo se haya sustanciado en una colección de fotos artísticas, parte de las cuales se muestran más abajo, con el título genérico de Reflejos.
-      </p>
-      <div class="collapse" id="collapseExample">
-        <div class="">
-
-          <blockquote class="blockquote zitat1">
-            Los reflejos nos invitan a viajar entre mundos, a descubrir
-            paisajes insólitos en el Alma, metáforas vivas, símbolos ocultos.
-
-            Los reflejos tienen la vocación de unir realidades, de sugerir claves
-            (en forma de belleza) para entender mejor
-            nuestra naturaleza multidimensional.
-            También los reflejos presentan la realidad como una gran ilusión.
-            En un mundo al revés, la imagen invertida de un ciclista en un charco
-            pone por un instante las cosas en su sitio.
-
-            El mundo de los reflejos es una dimensión poblada por seres fantásticos
-            criaturas que se fusionan con los elementos en contextos oníricos.
-
-            Mantener el diálogo entre mundos (a todos los niveles) es
-            una de nuestras atribuciones vitales como seres humanos.</blockquote>
-          <figcaption class="blockquote-footer cite">
-            Eduardo Laborda en <cite title="Source Title">Reflejos</cite>
-          </figcaption>
-          <p>Efectivamente, los reflejos son el elemento nuclear de la serie. Las superficies reflejantes (los muros cortina, el agua quieta o rizada, los vidrios…) proporcionan al ojo interesantes posibilidades de establecer un diálogo lúdico o conceptual, quizá artístico, con lo que ve. Nos dan la opción de duplicar lo real en lo fingido (reflejado). Se comportan como verdaderos trampantojos. El cerebro tiene que resolver esa duplicidad que crea el reflejo integrando lo nuevo en una nueva unidad o desintegrando lo nuevo para recuperar sus elementos constituyentes. El fenómeno parte de la mirada y desafía a la mirada, al sistema de percepción visual y al cerebro.
-          En sus trabajos, Eduardo Laborda va más allá de la captación del reflejo simple y mecánico, interpretable como trampantojo de lo reflejado. Sin abandonar ese aspecto básico, se remonta a propuestas complejas que se nutren de las más variadas posibilidades que brinda el dominio de la técnica fotográfica, buscando contenidos impostados, a veces simbólicos, a veces polisémicos, casi siempre sorprendentes. Aunque a él le gusta pensar que los reflejos son trampantojos naturales porque preexisten a su captación fotográfica, lo cierto es que en su manejo de la técnica no faltan la superposición, los fundidos, la precisión geométrica y los desenfoques, las inversiones posicionales, las angulaciones inusuales, las distorsiones y la nitidez, y todo aquello que le conduzca a una dimensión creativa, incluido cierto grado de entropía visual como acicate y reto para el ojo del contemplador y su capacidad de discernimiento o de integración.
-          Véanse algunos ejemplos:</p>
+    <div class="container-xl">
+      <div class="row">
+        <div class="col">
+          <h2 class="pt-4"> Reflejos</h2>
+            <p>
+               La labor del fotógrafo Eduardo Laborda Martínez es extensa e intensa, particularmente en México. Ha escrito, dirigido y fotografiado abundantes documentales y cortometrajes, ha trabajado de camarógrafo en diversos eventos, ha llevado a cabo numerosos encargos fotográficos para empresas e instituciones, ha realizado dos docenas de estudios fotográficos de artistas, ha expuesto su obra varias veces y ha publicado fotografías en diversos medios, además de conseguir nominaciones y premios en concursos y convocatorias. Quizá la vertiente más personal de su trabajo se haya sustanciado en una colección de fotos artísticas, parte de las cuales se muestran más abajo, con el título genérico de Reflejos.
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="">
+                <blockquote class="blockquote zitat1">
+                  Los reflejos nos invitan a viajar entre mundos, a descubrir
+                  paisajes insólitos en el Alma, metáforas vivas, símbolos ocultos.
+                  Los reflejos tienen la vocación de unir realidades, de sugerir claves
+                  (en forma de belleza) para entender mejor
+                  nuestra naturaleza multidimensional.
+                  También los reflejos presentan la realidad como una gran ilusión.
+                  En un mundo al revés, la imagen invertida de un ciclista en un charco
+                  pone por un instante las cosas en su sitio.
+                  El mundo de los reflejos es una dimensión poblada por seres fantásticos
+                  criaturas que se fusionan con los elementos en contextos oníricos.
+                  Mantener el diálogo entre mundos (a todos los niveles) es
+                  una de nuestras atribuciones vitales como seres humanos.</blockquote>
+                <figcaption class="blockquote-footer cite">
+                  Eduardo Laborda en <cite title="Source Title">Reflejos</cite>
+                </figcaption>
+                <p>Efectivamente, los reflejos son el elemento nuclear de la serie. Las superficies reflejantes (los muros cortina, el agua quieta o rizada, los vidrios…) proporcionan al ojo interesantes posibilidades de establecer un diálogo lúdico o conceptual, quizá artístico, con lo que ve. Nos dan la opción de duplicar lo real en lo fingido (reflejado). Se comportan como verdaderos trampantojos. El cerebro tiene que resolver esa duplicidad que crea el reflejo integrando lo nuevo en una nueva unidad o desintegrando lo nuevo para recuperar sus elementos constituyentes. El fenómeno parte de la mirada y desafía a la mirada, al sistema de percepción visual y al cerebro.
+                En sus trabajos, Eduardo Laborda va más allá de la captación del reflejo simple y mecánico, interpretable como trampantojo de lo reflejado. Sin abandonar ese aspecto básico, se remonta a propuestas complejas que se nutren de las más variadas posibilidades que brinda el dominio de la técnica fotográfica, buscando contenidos impostados, a veces simbólicos, a veces polisémicos, casi siempre sorprendentes. Aunque a él le gusta pensar que los reflejos son trampantojos naturales porque preexisten a su captación fotográfica, lo cierto es que en su manejo de la técnica no faltan la superposición, los fundidos, la precisión geométrica y los desenfoques, las inversiones posicionales, las angulaciones inusuales, las distorsiones y la nitidez, y todo aquello que le conduzca a una dimensión creativa, incluido cierto grado de entropía visual como acicate y reto para el ojo del contemplador y su capacidad de discernimiento o de integración.
+                Véanse algunos ejemplos:</p>
+              </div>
+            </div>
         </div>
       </div>
+    </div>
       <p>
         <a class="" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
           Leer más

@@ -4,6 +4,7 @@ title: Sobre mi Me
 permalink: false
 templateClass: tmpl-post
 eleventyNavigation:
+  icono: bi-person-circle
   key: Sobre mi
   order: 2
   url: /#about

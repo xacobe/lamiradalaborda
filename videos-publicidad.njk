@@ -6,26 +6,30 @@ pagination:
     alias: publicidad
 ---
 <header id="inicio" class="header text-uppercase header--small">
-  <h1 class="col-12 pt-3 page-title fs-1">
-    <p class="mx-auto ms-md-5 mt-4">{{ metadata.title }}</p></h1>
+  <h1 class="pt-3 col-12 page-title">
+    <p class="text-center mt-2 ms-md-5">{{ metadata.title }}</p></h1>
   {# <svg viewBox="0 0 450 50">
             <text y="50">{{ metadata.title }}</text>
           </svg> #}
-  <p class="page-subtitle fs-4 mx-auto ms-md-5 p-2 px-4 my-5">Vídeo y fotografía</p>
+  <p class="px-3 py-1 mx-auto page-subtitle fs-4 ms-md-5 mb-4">Vídeos publicitarios</p>
   <div class="wrapper-banner-image ">
-    <img src="/img/banner-eduardo-fotografia.jpg" class="banner-image banner-image--small">
+    <picture>
+      <source media="(max-width: 768px)" srcset="/img/banner-fotos-768.jpg"/>
+      <source media="(min-width: 769px)" srcset="/img/banner-fotos-1920.jpg"/>
+      <img class="banner-image banner-image--small" src="/img/banner-fotos-1920.jpg" alt="Una autoretrato con cámara de fotos"/>
+    </picture>
   </div>
 </header>
 {# Grid for photos  #}
 <div class="bg-white">
-  <div class="container-xl pt-5">
-    <h2 class="ps-3 ps-sm-5 ps-xl-0"> Vídeos de publicidad</h2>
-    {% include "components/video-nav.njk" %}
+  <div class="pt-2 container-xl">
     <section>
+    {% include "components/video-nav.njk" %}
     {# Vídeo grid #}
     {% include "components/video-grid.njk" %}
     {# Pagination #}
     {% include "components/pagination.njk" %}
+    {% include "components/video-nav.njk" %}
     </section>
   </div>
 </div>

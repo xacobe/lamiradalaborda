@@ -6,63 +6,41 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/index.css">
 
   </head>
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Montserrat", sans-serif;
-    }
-    .row-padding img {
-      margin-bottom: 12px;
-    }
-    /* Set the width of the sidebar to 120px */
-    .sidebar {
-      width: 120px;
-      background: #001219;
-    }
-    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-    #main {
-      margin-left: 120px;
-    }
-    /* Remove margins from "page content" on small screens TODO add back in*/
-    {% raw %}
-
-    {% endraw %}
-  </style>
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <nav id="myNavbar" class="top d-block top bg-black semitransparente sticky-top">
-      <div class="d-flex justify-content-center text-uppercase">
+    <nav id="myNavbar" class="bg-black d-block semitransparente fixed-bottom">
+      <ul class="d-flex justify-content-center list-unstyled text-uppercase mb-0">
         {%- for entry in collections.all | eleventyNavigation %}
-          <a href="{{ entry.url | url }}" class="bar-item p-2 p-md-3 ">{{ entry.title}}</a>
+        <li class="pt-3 pb-2 pb-md-3 px-3 menu-item">
+          <a href="{{ entry.url | url }}" class="bar-item"><i class="bi {{ entry.icono }} text-white text-center d-block fs-2 d-md-none"></i><p class="m-0">{{ entry.title}}</p></a>
         {%- endfor %}
-      </div>
+        </li>
+      </ul>
     </nav>
 
     {# Main content #}
     <main class="main-wrapper">
       {{ content | safe }}
     </main>
-    <footer class="footer pt-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <footer class="pt-4 footer">
+    <ul class="pb-3 mb-3 nav justify-content-center border-bottom">
       {%- for entry in collections.all | eleventyNavigation %}
       <li class="nav-item">
-          <a href="{{ entry.url | url }}" class="nav-link px-2">{{ entry.title}}</a>
+          <a href="{{ entry.url | url }}" class="px-2 nav-link">{{ entry.title}}</a>
       </li>
         {%- endfor %}
     </ul>
-    <div class="text-center pb-3">
+    <div class="pb-3 text-center">
       ©  <script type="text/javascript">document.write(new Date().getFullYear());</script>
       La mirada Laborda
     </div>
