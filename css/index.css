@@ -302,7 +302,9 @@ footer .border-bottom {
   margin-left: -50vw;
   left: 50%;
 }
-
+.text-red {
+  color: #9b2226 !important;
+}
 .bg-dark {
   background-color: #001219
 }
@@ -495,24 +497,31 @@ hr {
 
 /* Pagination */
 .pagination {
-  --bs-pagination-color: white;
+  --bs-pagination-color: #762935;
   --bs-pagination-bg: #762935;
 }
 
 .page-item {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 4.3rem;
   text-align: center;
+  width: 1.7rem;
 }
-
 .page-link {
   border-radius: 3rem;
   border: 0;
+  padding: 0.1rem;
+  background-color: #fff;
+  border: solid 1px #762935;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
-
+.page-link:hover {
+  background: #9b2226;
+  color: #fff;
+}
 .page-link[aria-current="page"] {
+  color: #fff;
   background: #dc3545;
+  border: solid 1px #dc3545;
 }
 
 .page-item:last-child .page-link,
