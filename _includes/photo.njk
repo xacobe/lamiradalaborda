@@ -8,6 +8,11 @@
     {{ item.photoDescription }}
   </div>
 </div> #}
+<a href="/img/photos/{{ item.fileTitle }}"
+      data-pswp-width="2500"
+      data-pswp-height="1667"
+      target="_blank">
 <img src="/img/photos/{{ item.fileTitle }}" loading="lazy" class="pb-0 img-fluid">
 {# <h4 class="photo-title mt-2">{{ item.photoTitle }}</h4> #}
   {# <date>{{ item.published_date }}</date> #}
+</a>

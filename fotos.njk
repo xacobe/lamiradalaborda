@@ -2,7 +2,7 @@
 layout: layouts/home.njk
 pagination:
     data: photoList.all
-    size: 30
+    size: 10
     alias: fotos
 eleventyNavigation:
   icono: bi-camera2
@@ -80,6 +80,8 @@ eleventyNavigation:
 
       {# Photo grid #}
       {% include "components/photo-grid.njk" %}
+      {# Pagination #}
+    {% include "components/pagination.njk" %}
     </section>
   </div>
   </div>

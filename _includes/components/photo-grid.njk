@@ -1,20 +1,8 @@
 {# Photo grid #}
-<div class="video-grid pb-3 row" id="photo-gallery">
-{# <div class="video-grid pb-3 row" data-masonry='{"percentPosition": true }'> #}
+<div class="video-grid pb-3 row" data-masonry='{"percentPosition": true }'>
   {%- for item in pagination.items %}
-    <div class="col-sm-6 col-lg-4 mb-4 photo">
+    <div class="col-sm-6 col-lg-4 mb-4">
       {% include 'photo.njk' %}
     </div>
   {% endfor -%}
-  {# Photoswipe lightbox #}
-  <script type="module">
-    import PhotoSwipeLightbox from '/photoswipe/dist/photoswipe-lightbox.esm.js';
-    const lightbox = new PhotoSwipeLightbox({
-      gallery: '#photo-gallery',
-      children: 'img',
-      pswpModule: () => import ('/photoswipe/dist/photoswipe.esm.js')
-    });
-    lightbox.init();
-  </script>
-
 </div>
