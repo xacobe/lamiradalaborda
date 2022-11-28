@@ -513,17 +513,14 @@ hr {
   border: 0;
   padding: 0.1rem;
   background-color: #fff;
-  border: solid 1px #762935;
   font-size: 0.8rem;
   font-weight: bold;
 }
 .page-link:hover {
-  background: #9b2226;
-  color: #fff;
+  color: #9b2226;
 }
 .page-link[aria-current="page"] {
-  color: #fff;
-  background: #dc3545;
+  color: #dc3545;
   border: solid 1px #dc3545;
 }
 
