@@ -33,8 +33,8 @@ pagination:
   </div>
 </header>
 {# Sobre mi Section #}
-<section id="about" class=" justify">
-  <div class="p-4 p-md-5 container-xxl bg-white" data-aos="fade-right" data-aos-duration="125">
+<section id="about" class="bg-white d-flex flex-column">
+  <div class="p-4 p-md-5 container-xxl" data-aos="fade-right" data-aos-duration="125">
 
     <h2 class="mb-2 fw-bold fs-2 text-uppercase ff-quicksand">La mirada Laborda</h2>
     <hr style="width:200px" class="opacity">
@@ -122,143 +122,144 @@ pagination:
     {# End Sobre mi Section #}
   </section>
 
-  {# Portfolio Section #}
-  <section id="videos" class="p-4 overflow-hidden container-xxl px-lg-5 bg-white" data-aos="fade-right" data-aos-duration="125">
-    <h2 class="mb-2 fw-bold fs-2 text-uppercase ff-quicksand">Vídeos</h2>
-    <hr style="width:200px" class="opacity">
-
-    {# Grid videos #}
-    <div class="row">
-      <div class="mb-2 mb-sm-3 col-md-6">
-        <div class="card flex-row p-3 h-100">
-          <div class="col-4 col-md-4 d-none d-sm-block ">
-            <img
-              src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-              alt=""
-              class="img-fluid object-fit-cover h-100"
-/>
-          </div>
-          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
-            <div class="d-flex align-items-center pb-3">
-              <div class="align-self-start">
-                <p class="mb-2 fw-bold fs-5 ff-montserrat">Videoclips</p>
-                <p class="mb-0">Videoclips musicales para bandas y cantautores.</p>
-              </div>
+  {# Videos Section #}
+  <section id="videos" class="bg-white">
+    <div class="p-4 overflow-hidden container-xxl px-lg-5" data-aos="fade-right" data-aos-duration="125">
+      <h2 class="mb-2 fw-bold fs-2 text-uppercase ff-quicksand">Vídeos</h2>
+      <hr style="width:200px" class="opacity">
+      {# Grid videos #}
+      <div class="row">
+        <div class="mb-2 mb-sm-3 col-md-6">
+          <div class="card flex-row p-3 h-100">
+            <div class="col-4 col-md-4 d-none d-sm-block ">
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                alt=""
+                class="img-fluid object-fit-cover h-100"
+      />
             </div>
-            <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-videoclips', '_self')">
-              <i class="bi bi-play-fill"></i>
-      Ver videoclips
-    </button>
+            <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
+              <div class="d-flex align-items-center pb-3">
+                <div class="align-self-start">
+                  <p class="mb-2 fw-bold fs-5 ff-montserrat">Videoclips</p>
+                  <p class="mb-0">Videoclips musicales para bandas y cantautores.</p>
+                </div>
+              </div>
+              <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-videoclips', '_self')">
+                <i class="bi bi-play-fill"></i>
+        Ver videoclips
+      </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-2 mb-sm-3 col-md-6">
-        <div class="card flex-row p-3 h-100">
-          <div class="col-4 col-md-4 d-none d-sm-block ">
-            <img
-              src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-              alt=""
-              class="img-fluid object-fit-cover h-100"
-/>
-          </div>
-          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
-            <div class="d-flex align-items-center pb-3">
-              <div class="align-self-start">
-                <p class="mb-2 fw-bold fs-5 ff-montserrat">Documentales</p>
-                <p class="mb-0">Una pequeña muestra de los documentales creados para diversos fines</p>
-              </div>
+        <div class="mb-2 mb-sm-3 col-md-6">
+          <div class="card flex-row p-3 h-100">
+            <div class="col-4 col-md-4 d-none d-sm-block ">
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                alt=""
+                class="img-fluid object-fit-cover h-100"
+      />
             </div>
-            <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-documentales', '_self')">
-              <i class="bi bi-play-fill"></i>
-      Ver documentales
-    </button>
+            <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
+              <div class="d-flex align-items-center pb-3">
+                <div class="align-self-start">
+                  <p class="mb-2 fw-bold fs-5 ff-montserrat">Documentales</p>
+                  <p class="mb-0">Una pequeña muestra de los documentales creados para diversos fines</p>
+                </div>
+              </div>
+              <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-documentales', '_self')">
+                <i class="bi bi-play-fill"></i>
+        Ver documentales
+      </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-2 mb-sm-3 col-md-6">
-        <div class="card flex-row p-3 h-100">
-          <div class="col-4 col-md-4 d-none d-sm-block ">
-            <img
-              src="https://mdbootstrap.com/img/new/avatars/9.jpg"
-              alt=""
-              class="img-fluid object-fit-cover h-100"
-/>
-          </div>
-          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
-            <div class="d-flex align-items-center pb-3">
-              <div class="align-self-start">
-                <p class="mb-2 fw-bold fs-5 ff-montserrat">Publicidad</p>
-                <p class="mb-0">Vídeos publicitarios y comerciales para vender y dar a conocerse ya sea en televisión o redes sociales.</p>
-              </div>
+        <div class="mb-2 mb-sm-3 col-md-6">
+          <div class="card flex-row p-3 h-100">
+            <div class="col-4 col-md-4 d-none d-sm-block ">
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/9.jpg"
+                alt=""
+                class="img-fluid object-fit-cover h-100"
+      />
             </div>
-            <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-publicidad', '_self')">
-              <i class="bi bi-play-fill"></i>
-      Ver publicidad
-    </button>
+            <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
+              <div class="d-flex align-items-center pb-3">
+                <div class="align-self-start">
+                  <p class="mb-2 fw-bold fs-5 ff-montserrat">Publicidad</p>
+                  <p class="mb-0">Vídeos publicitarios y comerciales para vender y dar a conocerse ya sea en televisión o redes sociales.</p>
+                </div>
+              </div>
+              <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-publicidad', '_self')">
+                <i class="bi bi-play-fill"></i>
+        Ver publicidad
+      </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-2 mb-sm-3 col-md-6">
-        <div class="card flex-row p-3 h-100">
-          <div class="col-4 col-md-4 d-none d-sm-block ">
-            <img
-              src="https://mdbootstrap.com/img/new/avatars/11.jpg"
-              alt=""
-              class="img-fluid object-fit-cover h-100"
-/>
-          </div>
-          <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
-            <div class="d-flex align-items-center pb-3">
-              <div class="align-self-start">
-                <p class="mb-2 fw-bold fs-5 ff-montserrat">Acústicos</p>
-                <p class="mb-0">Una versión reducida de un videoclip, para acompañar la música de contenido visual</p>
-              </div>
+        <div class="mb-2 mb-sm-3 col-md-6">
+          <div class="card flex-row p-3 h-100">
+            <div class="col-4 col-md-4 d-none d-sm-block ">
+              <img
+                src="https://mdbootstrap.com/img/new/avatars/11.jpg"
+                alt=""
+                class="img-fluid object-fit-cover h-100"
+      />
             </div>
-            <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-acusticos', '_self')">
-              <i class="bi bi-play-fill"></i>
-      Ver acústicos
-    </button>
+            <div class="card-body col-12 col-md-8 d-flex flex-column justify-content-between p-0 ps-sm-3">
+              <div class="d-flex align-items-center pb-3">
+                <div class="align-self-start">
+                  <p class="mb-2 fw-bold fs-5 ff-montserrat">Acústicos</p>
+                  <p class="mb-0">Una versión reducida de un videoclip, para acompañar la música de contenido visual</p>
+                </div>
+              </div>
+              <button class="btn-secondary ms-auto me-auto ms-md-auto me-md-0 btn-sm w-100" onclick="window.open('/videos-acusticos', '_self')">
+                <i class="bi bi-play-fill"></i>
+        Ver acústicos
+      </button>
+            </div>
           </div>
         </div>
+        <button class="w-auto mx-auto mt-4 btn-primary btn-lg" onclick="window.open('/videos-todos', '_self')">
+          <i class="bi bi-play-fill"></i>
+        Ver todos
+      </button>
       </div>
-      <button class="w-auto mx-auto mt-4 btn-primary btn-lg" onclick="window.open('/videos-todos', '_self')">
-        <i class="bi bi-play-fill"></i>
-      Ver todos
-    </button>
     </div>
     {# End Portfolio Section #}
   </section>
 
-  <section id="photos" class="p-2 py-4 overflow-hidden container-xxl p-lg-5 bg-white" data-aos="fade-right" data-aos-duration="125">
-    <h2 class="mb-2 fw-bold fs-2 text-uppercase ff-quicksand">Fotografías</h2>
-    <hr style="width:200px" class="opacity">
-
-    {# Grid photos #}
-    <h3 class="mb-3 fs-3 ff-quicksand">Reflejos</h3>
-    {# <div class="row" data-masonry='{"percentPosition": true }'> #}
-    <div class="row">
-      <div class="mb-4 col-6 col-md-4 col-lg-4 order-1">
-        <img src="/img/photos/frontpage/portada-reflejos-ciborg.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
-      </div>
-      <div class="mb-4 col-12 col-md-4 order-3 order-md-2">
-        <div class="row">
-          <div class="mb-4 col-6 col-md-12">
-            <img src="/img/photos/frontpage/portada-reflejos-puerto.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
+  <section id="photos" class="bg-white">
+    <div class="p-2 py-4 overflow-hidden container-xxl p-lg-5" data-aos="fade-right" data-aos-duration="125">
+      <h2 class="mb-2 fw-bold fs-2 text-uppercase ff-quicksand">Fotografías</h2>
+      <hr style="width:200px" class="opacity">
+      {# Grid photos #}
+      <h3 class="mb-3 fs-3 ff-quicksand">Reflejos</h3>
+      {# <div class="row" data-masonry='{"percentPosition": true }'> #}
+      <div class="row">
+        <div class="mb-4 col-6 col-md-4 col-lg-4 order-1">
+          <img src="/img/photos/frontpage/portada-reflejos-ciborg.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
+        </div>
+        <div class="mb-4 col-12 col-md-4 order-3 order-md-2">
+          <div class="row">
+            <div class="mb-4 col-6 col-md-12">
+              <img src="/img/photos/frontpage/portada-reflejos-puerto.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
+            </div>
+            <div class="mb-4 col-6 col-md-12">
+              <img src="/img/photos/frontpage/portada-reflejos-catedral.jpg" loading="lazy" class="img-fluid object-fit-cover h-100"></div>
           </div>
-          <div class="mb-4 col-6 col-md-12">
-            <img src="/img/photos/frontpage/portada-reflejos-catedral.jpg" loading="lazy" class="img-fluid object-fit-cover h-100"></div>
+        </div>
+        <div class="mb-4 col-6 col-md-4 col-lg-4 order-2 order-md-3">
+          <img src="/img/photos/frontpage/portada-reflejos-visualizador.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
         </div>
       </div>
-      <div class="mb-4 col-6 col-md-4 col-lg-4 order-2 order-md-3">
-        <img src="/img/photos/frontpage/portada-reflejos-visualizador.jpg" loading="lazy" class="img-fluid object-fit-cover h-100">
-      </div>
-    </div>
-
-    <button onclick="window.open('/fotos', '_self')" class="opacity mx-auto btn-primary btn-lg">
-      <i class="bi bi-play-fill"></i>
-      Ver fotografías
-    </button>
-    {# End Photos section #}
+      <button onclick="window.open('/fotos', '_self')" class="opacity mx-auto btn-primary btn-lg">
+        <i class="bi bi-play-fill"></i>
+        Ver fotografías
+      </button>
+      {# End Photos section #}
+  </div>
   </section>
 
   {# Contacto Section #}
