@@ -179,7 +179,6 @@ text-shadow: 1.3px 1.3px 5px black;
   height: 100vh;
   object-fit: cover;
   object-position: center left;
-  position: relative;
 }
 
 text.titulo {
@@ -278,7 +277,6 @@ main {
 .main-wrapper {}
 
 .footer {
-  background: #1a1919;
   color: #777676;
   padding-bottom: 5rem;
 }
@@ -306,7 +304,7 @@ footer .border-bottom {
   color: #9b2226 !important;
 }
 .bg-dark {
-  background-color: #001219
+  background-color: #001219 !important;
 }
 
 .bg-beige {
