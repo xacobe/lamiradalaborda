@@ -1115,8 +1115,9 @@ body[data-aos-easing=ease-in-out-quart] [data-aos] {
 }
 
 [data-aos^=flip][data-aos^=flip] {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition-property: transform
+  transition-property: transform;
 }
 
 [data-aos=flip-left] {

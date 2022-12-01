@@ -58,8 +58,6 @@ a:hover {
   }
 }
 
-#myNavbar .menu-item {}
-
 @media (min-width: 768px) {
   #myNavbar {
     top: 0;
@@ -273,8 +271,6 @@ main {
   z-index: 0;
   position: relative;
 }
-
-.main-wrapper {}
 
 .footer {
   color: #777676;
