@@ -4,13 +4,25 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const purgeCssPlugin = require("eleventy-plugin-purgecss");
+const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addPlugin(pluginNavigation);
 
+  eleventyConfig.addPlugin(UpgradeHelper);
+
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
+
+  eleventyConfig.addPlugin(purgeCssPlugin, {
+    // Optional: Specify the location of your PurgeCSS config
+    config: "./purgecss.config.js",
+
+    // Optional: Set quiet: true to suppress terminal output
+    quiet: false,
+  });
 
   eleventyConfig.setDataDeepMerge(true);
 
