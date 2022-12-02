@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginNavigation = require("@11ty/eleventy-navigation");
+const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -8,6 +9,8 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addPlugin(pluginNavigation);
+
+  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
   eleventyConfig.setDataDeepMerge(true);
 
