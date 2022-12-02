@@ -5,14 +5,10 @@ const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minif
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 
-module.exports = function(eleventyConfig) {
-
-
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
-
-  eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
 
@@ -22,6 +18,11 @@ module.exports = function(eleventyConfig) {
 
     // Optional: Set quiet: true to suppress terminal output
     quiet: false,
+  });
+
+  eleventyConfig.addPlugin(faviconsPlugin, {
+    outputDir: "./_site",
+    manifestData: { name: "Eduardo Laborda | La mirada Laborda" },
   });
 
   eleventyConfig.setDataDeepMerge(true);
