@@ -79,4 +79,4 @@ DEBUG=* npx eleventy
 
 * Set up purgecss https://www.npmjs.com/package/eleventy-plugin-purgecss
 
-
+* Using img2picture plugin for replace img with picture and create diferent sizes https://www.npmjs.com/package/eleventy-plugin-img2picture

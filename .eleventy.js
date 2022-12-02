@@ -6,6 +6,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+const img2picture = require("eleventy-plugin-img2picture");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -23,6 +24,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(faviconsPlugin, {
     outputDir: "./_site",
     manifestData: { name: "Eduardo Laborda | La mirada Laborda" },
+  });
+
+  eleventyConfig.addPlugin(img2picture, {
+    // Should be same as Eleventy input folder set using `dir.input`.
+    eleventyInputDir: ".",
+
+    // Output folder for optimized images.
+    imagesOutputDir: "_site/img/fotos",
+
+    // URL prefix for images src URLS.
+    // It should match with path suffix in `imagesOutputDir`.
+    // Eg: imagesOutputDir with `_site/images` likely need urlPath as `/images/`
+    urlPath: "/img/fotos/",
   });
 
   eleventyConfig.setDataDeepMerge(true);
