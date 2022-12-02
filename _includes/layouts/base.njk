@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    {% favicons "./img/favicon.svg", appleIconBgColor="#fff" %}
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    {% eleventyGoogleFonts "https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" %}
+    {% href="https://fonts.googleapis.com/css?family=Montserrat"
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/aos.css">
@@ -54,7 +55,7 @@
       if (!window.Cypress) AOS.init();
     </script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
-  <script type="module" src="/js/photoswipe/dist/photoswipe-lightbox.esm.js"></script>
+  {# <script type="module" src="/js/photoswipe/dist/photoswipe-lightbox.esm.js"></script> #}
   {# <script src="/js/masonry.pkgd.min.js"></script> #}
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
