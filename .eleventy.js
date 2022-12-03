@@ -7,7 +7,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const faviconsPlugin = require("eleventy-plugin-gen-favicons");
 const img2picture = require("eleventy-plugin-img2picture");
-const criticalCss = require("eleventy-critical-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
@@ -20,8 +19,6 @@ module.exports = function (eleventyConfig) {
     // Optional: Set quiet: true to suppress terminal output
     quiet: false,
   });
-
-  eleventyConfig.addPlugin(criticalCss);
 
   eleventyConfig.addPlugin(faviconsPlugin, {
     outputDir: "./_site",
