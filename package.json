@@ -34,11 +34,11 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "postcss": "^8.4.19",
-    "sass": "^1.56.1"
+    "postcss": "^8.4.19"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "eleventy-critical-css": "^1.1.0",
     "eleventy-plugin-embed-everything": "^1.14.0",
     "eleventy-plugin-img2picture": "^3.0.0",
     "eleventy-plugin-purgecss": "^0.3.0",
