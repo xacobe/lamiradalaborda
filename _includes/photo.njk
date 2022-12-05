@@ -1,18 +1,11 @@
 <!-- src/_includes/youtube.njk -->
 <!-- Web component for lite-youtube-embed -->
-{# <a class="mas-info float-end text-white text-decoration-none" data-bs-toggle="collapse" href="#mas-info-{{ item.photoId }}" role="button" aria-expanded="false" aria-controls="collapseExample">
-  + info
-</a>
-<div class="collapse" id="mas-info-{{ item.photoId }}">
-  <div class="card card-body bg-black text-muted">
-    {{ item.photoDescription }}
-  </div>
-</div> #}
-<a href="/img/photos/{{ item.fileTitle }}"
-      data-pswp-width="2500"
-      data-pswp-height="1667"
-      target="_blank">
-<img src="/img/photos/{{ item.fileTitle }}" data-img2picture-widths="200,400,600,800" loading="lazy" class="pb-0 img-fluid">
-{# <h4 class="photo-title mt-2">{{ item.photoTitle }}</h4> #}
-  {# <date>{{ item.published_date }}</date> #}
+<a href="/img/photos/{{ item.fileTitle }}" target="_blank">
+  <img
+    src="/img/photos/{{ item.fileTitle }}"
+    alt="{{ item.alt }}"
+    data-img2picture-widths="200,400,600,800"
+    loading="lazy"
+    class="pb-0 img-fluid"
+  >
 </a>

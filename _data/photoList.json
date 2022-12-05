@@ -2,6 +2,7 @@
   "all": [
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un edificio reflejado en un lago artificial",
     "fileTitle": "bano.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -10,6 +11,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Una catedral reflejada en un charco",
     "fileTitle": "catedral.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -18,6 +20,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un escaparate donde se puede ver reflejados unos farolillos chinos",
     "fileTitle": "china.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -26,6 +29,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Edificios reflejados sobre una superficie esferica pulida cual espejo",
     "fileTitle": "cierta-inclinacion-chicago.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -34,6 +38,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Una esfera pulida como un espejo se ve delante de un edificio",
     "fileTitle": "ciudad-en-gestacion.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -41,15 +46,8 @@
     ]
   },
   {
-    "photoTitle": "Los Artistas Bonbajel Mayaetik",
-    "fileTitle": "Disenno-texto-expo.jpg",
-    "published_date": "2014-02-27",
-    "tags": [
-      "reflejos"
-    ]
-  },
-  {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Una persona en bicicleta en la carretera",
     "fileTitle": "el-otro-rotterdam.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -58,6 +56,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "El retrato en color sepia de una persona fundido con la imagen de una niña en bicicleta",
     "fileTitle": "el-vinculo.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -66,6 +65,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un grupo de personas se reflejan en una superficie pulida",
     "fileTitle": "el-visualizador.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -74,6 +74,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Se ve un avión reflejado sobre un edificio de espejos",
     "fileTitle": "enfug.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -82,6 +83,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un edificio con ventanas de espejos reflejando otro edificio con ventanas de espejos",
     "fileTitle": "faro-alto-nita-chicago.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -90,6 +92,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Dos imágenes fundidas, una catedral y una figura de un caballo",
     "fileTitle": "fuera.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -98,6 +101,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un edificio se refleja en un charco de una calle con adoquines",
     "fileTitle": "hotel.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -106,6 +110,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Una mujer reflejada en un escaparate",
     "fileTitle": "IMG_3388.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -114,6 +119,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un bosque rodeado de nieve",
     "fileTitle": "IMG_3679.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -122,6 +128,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "El reflejo de un arbol sobre un escaparate donde hay un maniquí",
     "fileTitle": "IMG_4585.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -130,6 +137,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Una persona en puerto donde se ve el mar",
     "fileTitle": "IMG_4779.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -138,6 +146,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un triangulo donde se ve unas plantas",
     "fileTitle": "IMG_7912.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -146,6 +155,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un maniquí medio ciborg en un escaparate",
     "fileTitle": "IMG_8176.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -154,6 +164,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un edificio de chicago reflejado en el charco de la carretera",
     "fileTitle": "imperio-naufrago-chigao.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -162,6 +173,7 @@
   },
   {
     "photoTitle": "Rock tsotsil de San Juan Chamula",
+    "alt": "Un edificio residencial reflejado en una acera de adoquines",
     "fileTitle": "los-inquilinos.jpg",
     "published_date": "2010-08-28",
     "tags": [
@@ -170,6 +182,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "La base de la torre Eiffiel de noche",
     "fileTitle": "Luna.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -178,14 +191,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
-    "fileTitle": "mundo-reflejos.jpg",
-    "published_date": "2014-02-27",
-    "tags": [
-      "reflejos"
-    ]
-  },
-  {
-    "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "El reflejo de la sombra de dos personas sobre una acera de adoquines",
     "fileTitle": "pasajeros.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -194,6 +200,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Un maniquí en un escaparate",
     "fileTitle": "PC108835.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -202,6 +209,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Un reflejo que funde una imagen de Frida Kalo con un hombre andando por la calle",
     "fileTitle": "pos34.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -210,6 +218,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Un grupo de personas se ven reflejadas en un espejo",
     "fileTitle": "retrato-del-tiempo-de-chicago.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -218,6 +227,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Una alcantarilla al lado de un arbol",
     "fileTitle": "suelo-alcantarilla.jpg",
     "published_date": "2014-02-27",
     "tags": [
@@ -226,6 +236,7 @@
   },
   {
     "photoTitle": "Los Artistas Bonbajel Mayaetik",
+    "alt": "Piramides reflejadas sobre si mismas",
     "fileTitle": "via.jpg",
     "published_date": "2014-02-27",
     "tags": [
