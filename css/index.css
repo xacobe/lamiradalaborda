@@ -156,14 +156,14 @@ a:hover {
 
 .page-subtitle {
   background-color: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
   font-size: 0.9rem;
 }
 
 .header.header--small .page-subtitle {
   background-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 1.3px 1.3px 5px black;
 }
 
