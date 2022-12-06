@@ -623,6 +623,9 @@ lite-youtube.lyt-activated>.lty-playbtn {
 }
 
 /* Bloquote */
+.blockquote-footer {
+  color: #212529;
+}
 .zitat1 {
   position: relative;
   font-family: 'Verdana', serif;
