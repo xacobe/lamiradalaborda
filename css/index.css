@@ -101,12 +101,9 @@ a:hover {
   font-size: .7rem;
   text-decoration: none;
 }
-
-.bar-item.active {
-  background-color: #0A9396;
-  z-index: 999;
+.menu-item:has(.active) {
+  border-bottom: #0A9396 solid 5px;
 }
-
 #about,
 #videos,
 #contact,
