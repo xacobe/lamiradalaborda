@@ -40,8 +40,9 @@
         {%- endfor %}
     </ul>
     <div class="pb-3 text-center">
-      ©  <script type="text/javascript">document.write(new Date().getFullYear());</script>
-      La mirada Laborda
+      ©  <span id="year"></span><script type="text/javascript">document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+      <span>La mirada Laborda</span>
+</script>
     </div>
   </footer>
   </div>
