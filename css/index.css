@@ -134,12 +134,6 @@ a:hover {
   color: rgba(255, 255, 255, 0.8)
 }
 
-@media (min-width: 768px) {
-  .header .page-title p {
-    font-size: 7rem;
-  }
-}
-
 .header.header--small .page-title p {
   width: 100%;
   font-size: 2rem;
@@ -151,14 +145,14 @@ a:hover {
   }
 }
 
-.page-subtitle {
+.page-subtitle  {
   background-color: rgba(0, 0, 0, 0.6);
   color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
   font-size: 0.9rem;
 }
 
-.header.header--small .page-subtitle {
+.header.header--small .page-subtitle text-center {
   background-color: rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 1.3px 1.3px 5px black;
