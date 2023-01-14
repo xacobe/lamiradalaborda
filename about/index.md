@@ -1,11 +1,11 @@
 ---
 layout: layouts/post.njk
-title: Sobre mi Me
+title: Sobre mí Me
 permalink: false
 templateClass: tmpl-post
 eleventyNavigation:
   icono: bi-person-circle
-  key: Sobre mi
+  key: Sobre mí
   order: 2
   url: /#about
 ---
