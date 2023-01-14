@@ -10,6 +10,15 @@
     "videoId": "Sc7LQLYR_0Q"
   },
   {
+    "videoTitle": "El Bambú: la planta de los mil y un usos",
+    "published_date": "2011",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "kC4cZlb1NHU"
+  },
+  {
     "videoTitle": "Los Artistas Bonbajel Mayaetik",
     "published_date": "2014",
     "tags": [
@@ -64,6 +73,15 @@
     "videoId": "T7yEyJwAKhU"
   },
   {
+    "videoTitle": "Mallata Rapún casa rural.",
+    "published_date": "2017",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "AKcdcJv85yk"
+  },
+  {
     "videoTitle": "SISU - Carta a l'Amanta",
     "published_date": "2018",
     "tags": [
@@ -107,6 +125,24 @@
       "videoclip"
     ],
     "videoId": "ztJoFUYt_8Y"
+  },
+  {
+    "videoTitle": "L'habitació del farmacèutic",
+    "published_date": "2018",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "8WDW4vcqRXw"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas (vídeo llarg promoció Verkami)",
+    "published_date": "2021",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "FyFFgvlCpoI"
   },
   {
     "videoTitle": "Sílvia Tomàs - Ejecución pública [Chicho Sánchez Ferlosio]",
@@ -179,6 +215,42 @@
       "videoclip"
     ],
     "videoId": "171w1KPIuH0"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs i Sisu - No solució, no problema [Edu Henao]",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "8hVAmWdhiWI"
+  },
+  {
+    "videoTitle": "De Carajillos - La Nit è Calda",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "IcG8fkUj8rc"
+  },
+  {
+    "videoTitle": "De Carajillos - Semillas",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "UFpND73GPJQ"
+  },
+  {
+    "videoTitle": "De Carajillos - Hitz Egin!",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "8h3cegn4jnI"
   },
   {
     "videoTitle": "Sílvia Tomàs Trio - Techo de paja [Tonolec]",
@@ -403,6 +475,15 @@
 ],
 "documentales": [
   {
+    "videoTitle": "El Bambú: la planta de los mil y un usos",
+    "published_date": "2011",
+    "tags": [
+      "videos",
+      "documental"
+    ],
+    "videoId": "kC4cZlb1NHU"
+  },
+  {
     "videoTitle": "Los Artistas Bonbajel Mayaetik",
     "published_date": "2014",
     "tags": [
@@ -431,6 +512,24 @@
       "publicidad"
     ],
     "videoId": "lfbfQsV34_o"
+  },
+  {
+    "videoTitle": "Mallata Rapún casa rural.",
+    "published_date": "2016",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "AKcdcJv85yk"
+  },
+  {
+    "videoTitle": "L'habitació del farmacèutic",
+    "published_date": "2018",
+    "tags": [
+      "videos",
+      "publicidad"
+    ],
+    "videoId": "8WDW4vcqRXw"
   },
   {
     "videoTitle": "La fuga de l'home cranc - Guillem Sala",
@@ -479,6 +578,42 @@
     "videoId": "pO9jOq6MLuA"
   },
   {
+    "videoTitle": "Sílvia Tomàs i Sisu - No solució, no problema [Edu Henao]",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "8hVAmWdhiWI"
+  },
+  {
+    "videoTitle": "De Carajillos - La Nit è Calda",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "IcG8fkUj8rc"
+  },
+  {
+    "videoTitle": "De Carajillos - Semillas",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "UFpND73GPJQ"
+  },
+  {
+    "videoTitle": "De Carajillos - Hitz Egin!",
+    "published_date": "2019",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "8h3cegn4jnI"
+  },
+  {
     "videoTitle": "Sílvia Tomàs Trio - Techo de paja [Tonolec]",
     "published_date": "2020",
     "tags": [
@@ -486,6 +621,15 @@
       "acustico"
     ],
     "videoId": "HaKbTSEsRuk"
+  },
+  {
+    "videoTitle": "Sílvia Tomàs Trio - Jaulas abiertas (vídeo llarg promoció Verkami)",
+    "published_date": "2021",
+    "tags": [
+      "videos",
+      "acustico"
+    ],
+    "videoId": "FyFFgvlCpoI"
   }
 ]
 }
