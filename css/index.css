@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-  --bs-link-hover-color: white;
+  --bs-link-hover-color: black;
 }
 
 .ff-montserrat {
@@ -620,36 +620,6 @@ lite-youtube.lyt-activated>.lty-playbtn {
 .blockquote-footer {
   color: #212529;
 }
-.zitat1 {
-  position: relative;
-  font-family: 'Verdana', serif;
-  font-size: 1.2em;
-  line-height: 1.5em;
-}
-
-.zitat1 cite {
-  font-family: 'Verdana', sans-serif;
-  font-size: 0.6em;
-  font-weight: 700;
-  color: #bdbec0;
-  float: right;
-}
-
-.zitat1 cite:before {
-  content: '\2015' ' ';
-}
-
-.zitat1::after {
-  content: '\201d';
-  position: absolute;
-  top: 0.28em;
-  right: -30px;
-  font-size: 26em;
-  font-style: italic;
-  color: rgba(155, 155, 125, .3);
-  z-index: 0;
-}
-
 .video-title {
   padding-top: .5rem;
   padding-left: .5rem;
