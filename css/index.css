@@ -38,6 +38,9 @@ a:hover {
   font-family: 'Quicksand', sans-serif !important;
 }
 
+.ff-alatsi {
+  font-family: 'Alatsi', sans-serif !important;
+}
 #myNavbar {
   padding: 0;
   position: fixed;
@@ -88,7 +91,6 @@ a:hover {
 }
 
 .header.header--small .page-title {
-  text-shadow: black 1px 11px 11px;
   width: 100%;
 }
 
@@ -123,15 +125,14 @@ a:hover {
 
 .page-title {
   color: whitesmoke;
-  text-shadow: #313131 3px 3px 1px;
   width: 100%;
 }
 
 .page-title p {
-  font-size: clamp(3rem, 10vw, 5rem);
+  font-size: clamp(3rem, 10vw, 10rem);
   text-align: center;
   margin: 0;
-  color: rgba(255, 255, 255, 0.8)
+  color: white;
 }
 
 .header.header--small .page-title p {
@@ -146,16 +147,15 @@ a:hover {
 }
 
 .page-subtitle  {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-  font-size: 0.9rem;
+  color: black;
+  font-size: clamp(2rem, 5vw, 5rem);
+  margin-bottom: auto;
+  line-height: 1;
 }
 
-.header.header--small .page-subtitle text-center {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.9);
-  text-shadow: 1.3px 1.3px 5px black;
+.header.header--small .page-subtitle {
+  background: white;
+  color: black;
 }
 
 .wrapper-banner-image {
