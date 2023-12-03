@@ -171,9 +171,11 @@ a:hover {
   z-index: -1;
   height: 100vh;
   object-fit: cover;
+  object-position: center -11rem;
+}
+.banner-image--frontpage {
   object-position: top left;
 }
-
 text.titulo {
   fill: none;
   stroke: #001219;
