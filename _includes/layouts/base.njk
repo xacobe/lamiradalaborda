@@ -6,31 +6,13 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
     {% favicons "./img/favicon.svg", appleIconBgColor="#fff" %}
-    <link rel="preconnect" as="font" type="font/woff2" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" as="font" type="font/woff2" href="https://fonts.gstatic.com" crossorigin>
-    <link as="font" type="font/woff2" href="https://fonts.googleapis.com/css?family=Montserrat">
-
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/css/fonts/quicksand-v30-latin-regular.woff2"
-    >
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/css/fonts/quicksand-v30-latin-700.woff2"
-    >
-    <link
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      href="/css/fonts/alatsi-v10-latin-regular.woff2"
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" type="text/css">
     <link rel="stylesheet" href="/css/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/bootstrap/font/bootstrap-icons.css">
-    <link rel="preconnect" as="font" type="font/woff2" href="/css/bootstrap/font/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47" crossorigin>
     <link rel="stylesheet" href="/css/index.css">
 
   </head>
@@ -66,7 +48,7 @@
   </footer>
   </div>
   <script src="/css/bootstrap/js/bootstrap.min.js"></script>
-  <script type="module" src="/js/lite-youtube.js"></script>
-  <script src="/js/masonry.pkgd.min.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1.4.0/lite-youtube.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 </body>
 </html>
