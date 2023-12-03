@@ -18,7 +18,7 @@
   </head>
   <body data-bs-spy="scroll" data-bs-target="#myNavbar">
 
-    <nav id="myNavbar" class="bg-black d-block semitransparente fixed-bottom">
+    <!-- <nav id="myNavbar" class="bg-black d-block semitransparente fixed-bottom">
       <ul class="d-flex justify-content-center list-unstyled text-uppercase mb-0">
         {%- for entry in collections.all | eleventyNavigation %}
         <li class="pt-3 pb-2 pb-md-3 px-3 menu-item">
@@ -26,7 +26,38 @@
         {%- endfor %}
         </li>
       </ul>
+    </nav> -->
+    {% if page.url === '/' %}
+    <!-- Menú Principal -->
+    <nav id="myNavbar" class="bg-black d-block semitransparente fixed-bottom">
+      <ul class="d-flex justify-content-center list-unstyled text-uppercase mb-0">
+        {% for item in mainMenuHome %}
+        <li class="pt-3 pb-2 pb-md-3 px-3 menu-item">
+          <a href="{{ item.url | url }}" class="bar-item"><i
+              class="bi {{ item.icono }} text-white text-center d-block fs-2 d-md-none"></i>
+            <p class="m-0">{{ item.title}}</p>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </nav>
+    {% else %}
+    <!-- Menú Secundario -->
+    <nav id="myNavbar" class="bg-black d-block semitransparente fixed-bottom">
+      <ul class="d-flex justify-content-center list-unstyled text-uppercase mb-0">
+        {% for item in mainMenu %}
+        <li class="pt-3 pb-2 pb-md-3 px-3 menu-item">
+          <a href="{{ item.url | url }}" class="bar-item"><i
+              class="bi {{ item.icono }} text-white text-center d-block fs-2 d-md-none"></i>
+            <p class="m-0">{{ item.title}}</p>
+          </a>
+        </li>
+        <!-- <li class="pt-3 pb-2 pb-md-3 px-3 menu-item"><a href="{{ item.url }}" class="bar-item"><i class="bi {{ item.icono }} text-white text-center d-block fs-2 d-md-none"></i> {{ item.title }}</a></li> -->
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+
 
     {# Main content #}
     <main class="main-wrapper">

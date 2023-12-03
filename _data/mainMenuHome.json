@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Inicio",
+    "url": "/#inicio",
+    "icono": "bi-house"
+  },
+  {
+    "title": "Sobre mí",
+    "url": "/#about",
+    "icono": "bi-person-circle"
+  },
+  {
+    "title": "Vídeos",
+    "url": "/#videos",
+    "icono": "bi-film"
+  },
+  {
+    "title": "Fotos",
+    "url": "/#photos",
+    "icono": "bi-camera2"
+  },
+  {
+    "title": "Contacto",
+    "url": "/#contact",
+    "icono": "bi-envelope"
+  }
+]
