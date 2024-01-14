@@ -49,7 +49,8 @@ a:hover {
   left: 0;
   z-index: 1030;
 }
-
+#myNavbar .menu-item:first-child, #myNavbar .menu-item:last-child
+ { margin-left: auto;}
 #myNavbar .menu-item a {
   font-size: .7rem;
 }
